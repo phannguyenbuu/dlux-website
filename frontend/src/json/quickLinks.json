@@ -1,0 +1,14 @@
+[
+  { "title": "logo", 
+    "image": "/images/logo.png", 
+    "href": "mocviet/", 
+    "choices": [] 
+  },
+  
+  { "title": "Become A Partner", "href": "become" , "choices": [] },
+  { "title": "About", "href": "about" , "choices": [] },
+  
+  { "title": "Discount", "href": "discount", "choices": [] },
+  { "title": "Giveaways", "href": "giveaway", "choices": [] },
+  { "title": "Shop", "href": "shop", "choices": [] }
+]

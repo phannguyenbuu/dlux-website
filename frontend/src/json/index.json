@@ -1,0 +1,322 @@
+{
+  "home":{
+    "content": "Welcome to DLUX, the top shopping solution in Australia. With an advanced dashboard and a user-friendly mobile app, DLUX provides Australian users with unmatched opportunities to save and shop smarter"
+  },
+  "services":[
+    {
+        "title": "AUTOMOTIVE",
+        "description": "Discover DLUX, Australia's leading shopping platform designed to bring you unbeatable savings. Featuring a powerful dashboard and an intuitive mobile app, DLUX delivers exceptional value and convenience for Australian shoppers",
+        "imageUrl": "/images/icons/car.png",
+        
+        "color": "#000"
+    },
+      {
+        "title": "HOMEWARE",
+        "description": "We have partnered with the leading experts in the industry to offer you exceptional deals on furniture, homeware, elegant decor, electrical supplies, plumbing essentials, and much more—helping you bring comfort and sophistication to your living space",
+        "imageUrl": "/images/icons/villa.png",
+        
+        "color": "#000"
+    },
+    {
+        "title": "MAERCHANDISE",
+        "description": "Your ultimate destination for exclusive offers on premium apparel, accessories, and must-have items from Australia’s top brands, designed to upgrade your style with a fresh, branded look",
+        "imageUrl": "/images/icons/homeware.png",
+        
+        "color": "#000"
+    },
+    {
+        "title": "RETREAT",
+        "description": "Your perfect escape awaits with exclusive offers on luxurious accommodations, breathtaking views, world-class amenities, and unforgettable experiences—designed to create relaxation and elegance at every moment of your stay",
+        "imageUrl": "/images/icons/beach.png",
+        
+        "color": "#000"
+    },
+    {
+        "title": "INTERIOR",
+        "description": "We provide comprehensive interior decorating services that transform your living or working spaces into stunning environments that perfectly reflect your style and personality",
+        "imageUrl": "/images/icons/interior.png",
+        
+        "color": "#000"
+    },
+    {
+        "title": "JEWELRY",
+        "description": "Our expert jewelers and designers work meticulously to craft custom pieces that perfectly capture your vision, whether you're looking for timeless classics or modern designs",
+        "imageUrl": "/images/icons/jewelry.png",
+        
+        "color": "#000"
+    }
+
+
+  ],
+
+  "partners":[
+    {
+        "title": "Adidas",
+        "description": "",
+        "imageUrl": "/images/partners/adidas.jpg",
+        "color": "#000"
+    },
+    {
+        "title": "Ferrari",
+        "description": "",
+        "imageUrl": "/images/partners/ferrari.jpg",
+        "color": "#000"
+    },
+    {
+        "title": "Hilton",
+        "description": "",
+        "imageUrl": "/images/partners/hilton.jpg",
+        "color": "#000"
+    },
+
+    {
+        "title": "LVMH",
+        "description": "",
+        "imageUrl": "/images/partners/LVMH.jpg",
+        "color": "#000"
+    },
+
+    {
+        "title": "melia",
+        "description": "",
+        "imageUrl": "/images/partners/melia.jpg",
+        "color": "#000"
+    },
+
+    {
+        "title": "Mercedes",
+        "description": "",
+        "imageUrl": "/images/partners/Mercedes.jpg",
+        "color": "#000"
+    },
+
+    {
+        "title": "Mecedes AMG",
+        "description": "",
+        "imageUrl": "/images/partners/mercedes_amg.jpg",
+        "color": "#000"
+    },
+
+
+    {
+        "title": "Nike",
+        "description": "",
+        "imageUrl": "/images/partners/nike.jpg",
+        "color": "#000"
+    },
+
+    {
+        "title": "Porches",
+        "description": "",
+        "imageUrl": "/images/partners/porches.jpg",
+        "color": "#000"
+    },
+
+    {
+        "title": "Paris Sant German",
+        "description": "",
+        "imageUrl": "/images/partners/PSG.jpg",
+        "color": "#000"
+    },
+
+    {
+        "title": "Umbro",
+        "description": "",
+        "imageUrl": "/images/partners/umbro.jpg",
+        "color": "#000"
+    }
+  ],
+
+  "aboutus":
+  {
+    "indexes":[{"title":"2000<span style='color:#0497FD'>+</span>","content":"Australian business partners"},
+              {"title":"<span style='color:#0497FD'>$</span>1000<span style='color:#0497FD'>s</span>","content":"Is saving through our master rates discounts"},
+              {"title":"1500<span style='color:#0497FD'>+</span>","content":"Store you can redeem offers in person or online"}],
+    "contents": [
+      "Welcome to DLUX, Australia's leading shopping platform. Featuring a powerful dashboard and an easy-to-use mobile app, DLUX delivers unmatched savings opportunities to Australian shoppers",
+      "Our platform connects users to exclusive offers from over 2,000 partners, empowering them to make informed and budget-friendly purchases—all within one convenient location. At DLUX, our community isn't just casual visitors; they are committed paying members dedicated to maximizing the value of our software. This strong purchase intent attracts advertisers and partners, ensuring high engagement and real transactions",
+      "Moreover, we proudly maintain exclusive partnerships that provide unique discounts tailored specifically for DLUX members, offering benefits beyond standard affiliate programs"
+    ]
+  },
+
+  "features":[
+    {
+        "title": "",
+        "description": "",
+        "imageUrl": "/images/features/seven_network.png",
+        "color": "#000"
+    },
+    {
+        "title": "",
+        "description": "",
+        "imageUrl": "/images/features/sponsoredlinx.png",
+        "color": "#000"
+    },
+    {
+        "title": "",
+        "description": "",
+        "imageUrl": "/images/features/ten_network.png",
+        "color": "#000"
+    },
+
+    {
+        "title": "",
+        "description": "",
+        "imageUrl": "/images/features/the_age.png",
+        "color": "#000"
+    }
+  ],
+
+
+
+  "howItWorks": [
+    {
+      "title":"ALL-IN-ONE-APP",
+      "content"     : "Download D-LUX to access discounts, giveaway, and bounuses for maximum benefits"
+    },
+    {
+      "title":"DISCOUNT",
+      "content"     : "2000+ businesses across Australia offer exclusive deals for D-LUX members"
+    },
+    {
+      "title":"GIVEAWAY",
+      "content"     : "Join us to win cars, houses, cash, and other amazing rewards!"
+    }
+
+  ],
+
+  "famousGiveaway": {
+    "createAt":"Thursday 18tr of September at 6:59AM",
+    "initial":{
+      "days":5,
+      "hours":19,
+      "minutes":7,
+      "seconds":59
+    },
+    "title": "2025 Tesla Cybertruck",
+    "content": "Brand-New 2025 Tesla Cybertruck",
+    "img": "/images/tesla.png"
+  },
+
+  "winners": [{
+    "img": "/images/winners/004.jpg",
+    "title":"$500K",
+    "content": "5:00pm 11 September 2025 - Event Complete",
+    "prizes": [
+      {"title": "1st Prize $500K Tax-Free Cash", "content":"Rita A."},
+      {"title": "2nd Prize $2500 Partner Credit", "content":"Kade S."},
+      {"title": "3rd Prize $1000 Partner Credit", "content":"Adrian S."}
+    ]
+  },
+{
+    "img": "/images/winners/001.jpg",
+    "title":"1 MILLION",
+    "content": "5:00pm 4 September 2025 - Event Complete",
+    "prizes": [
+      {"title": "1st Prize $1,000,000 Tax-Free Cash", "content":"Cameron L."},
+      {"title": "2nd Prize $2500 Partner Credit", "content":"Graham C."},
+      {"title": "3rd Prize $1000 Partner Credit", "content":"Jenny M."}
+    ]
+  },
+{
+    "img": "/images/winners/cayenne.jpg",
+    "title":"$500K",
+    "content": "5:00pm 11 September 2025 - Event Complete",
+    "prizes": [
+      {"title": "1st Prize Porches Cayenne or $100K", "content":"Matt B."},
+      {"title": "2nd Prize $2500 Partner Credit", "content":"Kade S."},
+      {"title": "3rd Prize $1000 Partner Credit", "content":"Adrian S."}
+    ]
+  }],
+
+
+  "membership": [
+    {
+      "title":"Exclusive discounts",
+      "description":"Unlock access to substantial discounts at businesses across Australia, all for a low monthly membership fee",
+      "imageUrl": "/images/icons/beach.png"
+    },
+      {"title": "Flexibility to opt-out",
+      "description": "We value your freedom. Not feeling the ride anymore? Cancel your membership at any time, no strings attached",
+      "imageUrl": "/images/icons/car.png"
+      },
+      {"title": "Trusted partnerships",
+      "description": "We have partnered with the leading experts in the industry to offer you exceptional deals on furniture, homeware, elegant decor, electrical supplies, plumbing essentials, and much more—helping you bring comfort and sophistication to your living space",
+      "imageUrl": "/images/icons/homeware.png"
+    },
+    {
+      "title": "Expert support",
+      "description": "Got questions or need assistance? Our professional support team is always ready to help you navigate your journey with us",
+      "imageUrl": "/images/icons/jewelry.png"
+    }
+  ],
+
+  "review": [
+    {
+      "imageUrl":"images/quotes.svg",
+      "title":"SHARONH - Loyalty Member",
+      "description":"Excellent customer service! I was having issues logging in and they were onto it straight away. Finally logged in and was able to view the features on the site. I have taken full advantage of the Mates Rates part and was able to receive $100 off my first purchase at Naked Wines. Will definitely be making more use of their special offers"
+    },
+    {
+      "imageUrl":"images/quotes.svg",
+      "title":"JOSH B - Silver Package",
+      "description":"Purchased a coupe of times before but never really saw the point of being able to have access to the database until I logged in and had a proper look. Ended up saving myself 15% at Beaurepairs and will definitely be making use of the special offers they have next time I make a purchase."
+    },
+    {
+      "imageUrl":"images/quotes.svg",
+      "title":"LIAMH - Silver Package",
+      "description":"Was able to get some sick discounts through the members portal after making a one off purchase. Might have to join soon to keep getting all the perks"
+    },
+    {
+      "imageUrl":"images/quotes.svg",
+      "title":"LIAMH - Silver Package",
+      "description":"Was able to get some sick discounts through the members portal after making a one off purchase. Might have to join soon to keep getting all the perks"
+    },
+    {
+      "imageUrl":"images/quotes.svg",
+      "title":"LIAMH - Silver Package",
+      "description":"Was able to get some sick discounts through the members portal after making a one off purchase. Might have to join soon to keep getting all the perks"
+    },
+    {
+      "imageUrl":"images/quotes.svg",
+      "title":"BEN A - Silver Package",
+      "description":"Nice meeting the boys and getting to know them at their meet and greets, absolute legends!"
+    },
+    {
+      "imageUrl":"images/quotes.svg",
+      "title":"JAMES S - Platinum Package",
+      "description":"Had the pleasure of meeting the team at one of their track days and can’t wait to be able to meet them again!"
+    }
+    
+  ],
+
+  "contact": {
+    "title":"CONTACT SUPPORT",
+    "description": "Have a Question? Check out our  as we have a list of common questions answered there for you. If its not a common question fill out the form above and we’ll be able to get back to you within 24 hours"
+              
+  },https://github.com/nguyenbuu/repository.git
+
+  "precise": [
+  {
+    "title": "Privacy Policy",
+    "href":"privacy-policy",
+    "content": "DLUX owned and operated by LMCT Plus having registered office in Victoria, Australia, is committed to protecting your privacy. We have prepared this Privacy Policy to describe to you our practices regarding the Personal Information we collect from users of our website.\nBy using the Services, users consent to the collection and use of their Personal Information by us. You also represent to us that you have any and all authorisations necessary to use these Services including using them to process Personal Information. We collect and use the information you provide to us, including information obtained from your use of the Services. Also, we may use the information that we collect for our internal purposes to develop, tune, enhance, and improve our Services, and for advertising and marketing consistent with this Privacy Policy.\nThis Privacy Policy has been drafted having regard to our obligations under the Privacy Act 1988 (Cth), the Privacy Amendment (Enhancing Privacy Protection) Act 2012 which includes the Australian Privacy Principles (collectively, the Privacy Act). This Privacy Policy is a public document and has been prepared in light of Australian Privacy Principle 1 i.e. Open and Transparent Management of Personal Information.\nPlease read our privacy policy carefully to get a clear understanding of how our website collects, uses, protects or otherwise handles users’ Personal Information.\nThis Privacy Policy is intended to inform users about how our website treats Personal Information that it processes about users. If users do not agree to any part of this Privacy Policy, then we cannot provide its Services to users and users should stop accessing our services.\nBy using the Services, You acknowledge, consent and agree that we may collect, process, and use the information that you provide to us and that such information shall only be used by us or third parties acting under our direction, pursuant to confidentiality agreements, to develop, tune, enhance, and improve the Services.\nAlthough we may attempt to notify you when changes are made to this Privacy Policy, you are responsible for periodically reviewing any changes which may be made to the Policy. We may, in our sole discretion, modify or revise the Policy at any time, and you agree to be bound by such modifications or revisions.\n\n\nDEFINITIONS\n\n• “Collect” means gather, acquire or obtain by a lawful and fair means, information in circumstances where the individual is identifiable or identified.\n• “Express Consent Consequences” includes the fact that that we will not be accountable under the Privacy Act and you will not be able to seek redress under the Privacy Act in the event that you provide consent to the disclosure of your Personal Information by us to an overseas recipient and the overseas recipient handles your Personal information in breach of the Privacy Act.\n• “Expressly Informed” means the circumstance where we have provided you with a clear statement (either verbal or in writing) of the Express Consent Consequences.\n• “Opt Out” means an individual’s expressed request not to receive further Direct Marketing communications.\n• “Personal Information” means information that is not Sensitive Information, including information or an opinion (whether information or an opinion forming part of a database), whether true or not and whether recorded in a material form or not, about an individual whose identity is apparent, or can reasonably be ascertained from the information or opinion. This includes, but is not limited to, an individual’s first name, last name, email address, phone number, password and address.\n• “Primary Purpose” is the main reason for the Collection of any Personal Information.\n• “Reasonable Expectation” means a reasonable individual’s expectation that their personal information might be Used or Disclosed for the relevant purpose.\n• “Secondary Purpose” means a purpose of Use or Disclosure other than a Primary Purpose.\n• “Sensitive Information” is given its meaning in section 6(1) of the Privacy Act 1988 (Cth).\n• “Use” means the handling of Personal Information by our Company.\n\n\nINFORMATION WE COLLECT\n\n• When you register with us, you provide us information about yourself – your name, email address, phone number etc. If you correspond with us by e-mail, we may retain the content of your e-mail messages, your e-mail address, and our responses. We also collect general information about your use of our services.\n• By entering your email and phone number on our website, you may receive marketing material from us. This includes, but is not limited to, promotional offers, newsletters, and information about new products or services. We may use the information you provide us to contact you via email or phone, even if you do not submit any forms. If you do not wish to receive marketing material from us, please let us know by emailing us at support@dlux.com or by unsubscribing from our emails.\n• While interacting with other users on the Forum or Interactive Area, you share your contact information, the messages which you share are not private and can be viewed by any member or user of the website.\n• The advertisement and other related details that you post on the website and the information which you share therein are collected by us.\n• INFORMATION WE COLLECT AUTOMATICALLY WHEN YOU USE OUR SERVICES\n• When you access or use our Services, we automatically collect information about you, including:\n• Log Information: We log information about your use of our website, including your browser type and language, access times, pages viewed, your IP address and the website you visited before navigating to our website.\n• Device Information: We may collect information about the device you use to access our Services, including the hardware model, operating system and version, unique device identifier, phone number, International Mobile Equipment Identity (“IMEI”) and mobile network information.\n• Location Information: With your consent, we may collect information about the location of your device to facilitate your use of certain features of our Services, determine the speed at which your device is traveling, add location-based filters (such as local weather), and for any other purposes.\n• Information Collected by Cookies and Other Tracking Technologies: We use various technologies to collect information, and this may include sending cookies to you. A “cookie” is a small data file transferred to your computer’s hard drive that allows a Website to respond to you as an individual, gathering and remembering information about your preferences in order to tailor its operation to your needs, likes and dislikes. Overall, cookies are safe, as they only identify your computer to customize your Web experience. Accepting a cookie does not provide us access to your computer or any Personal Information about you, other than the information you choose to share. Other servers cannot read them, nor can they be used to deliver a virus. Most browsers automatically accept cookies, but you can usually adjust yours (Microsoft Internet Explorer, Firefox or Google Chrome) to notify you of cookie placement requests, refuse certain cookies, or decline cookies completely. If you turn off cookies completely, there may be some website features that will not be available to you, and some Web pages may not display properly. To support the personalized features of our website (such as your country and language codes and browsing functions) we must send a cookie to your computer’s hard drive and/or use cookie-based authentication to identify you as a registered website user.\n\n\nINFORMATION SHARED WHILE POSTING ON VARIOUS PLATFORMS OF THE WEBSITE\n\n• While interacting with other users on the Forum/interactive area, you share your contact information; the messages which you share are not private and can be viewed by any member or user of the website.\n• The advertisements and related material that you post on the website and the information which you share therein are collected by us.\nINFORMATION SHARED DURING TRANSACTION\n• You agree that you will enter into transactions with third parties through our website and will share your Personal Information with them for easy completion of the transaction. You hereby expressly agree that we shall not be involved or held liable for any breach of the privacy or security of that data. The said breach, if any, shall be a matter of dispute between you and the third party and we shall not be held liable or be issued a notice for the same.\n• We STRONGLY recommend that you should be careful and vigilant while disclosing your Personal Information with your transaction partner. Please do not disclose your bank and account details to anyone through our website or to any individual whom you have met through our website.\n• We do not take credit card/debit card or other bank details on our website. For payment you will be directed to sign in through the respective payment gateways integrated on our website and the transaction would be completed therein. It is to be noted that we will not be storing any Bank related information on our records and none of our staffs will hold or be exposed to this information.\nHOW WE USE YOUR INFORMATION\n• We use the personal information we collect to fulfil your requests for services, improve our services and contact you.\n• By typing into any form and providing us your e-mail address and or mobile number, you consent to us using the e-mail address and mobile number to send you our website and services related notices, including any notices required by law, in lieu of communication by postal mail. You also agree that we may send notifications of activity on our website to the e-mail address or mobile device you give us, in accordance with any applicable privacy settings. We may use your e-mail address to send you other messages, such as newsletters, changes to our features, or other information. If you do not want to receive optional e-mail messages, you may modify your settings to opt out.\n• Our settings may also allow you to adjust your communications preferences. If you do not wish to receive promotional email messages from us, you may opt out by following the unsubscribe instructions in those emails. If you opt out, you will still receive non-promotional emails from us about your account and our Services.\n• Following termination or deactivation of your services, we may (but are under no obligation to) retain your information for archival purposes. We will not publicly disclose any of your Personal Information other than as described in this Privacy Policy.\n• At our sole discretion, for any reason or no reason at all, we reserve the right to remove any content or messages, if we believe that such action is necessary (a) to conform to the law, comply with legal process served on us, or investigate, prevent, or take action regarding suspected or actual illegal activities; (b) to enforce this policy, to take precautions against liability, to investigate and defend ourselves against any third-party claims or allegations, to assist government enforcement agencies, or to protect the security or integrity of our website; or (c) to exercise or protect the rights, property, or personal safety of the website, our users, or others.\n\n\nHOW WE SHARE YOUR INFORMATION\n\n• As a matter of policy, we will not sell or rent information about you and we will not disclose information about you in a manner inconsistent with this Privacy Policy except as required by law or government regulation. We co-operate with law enforcement inquiries, as well as other third parties, to enforce laws such as those regarding intellectual property rights, fraud and other personal rights.\n• We will not share the personal information we collect about you with any third party for their own marketing purposes without your consent. We have contract with third parties prohibiting them from sharing your Personal Information.\n• If you do not agree with our Privacy Policy or Terms of Service, please discontinue use of our Service; your continued usage of the Service will signify your assent to and acceptance of our Privacy Policy and Terms of Use.\n• WE CAN (AND YOU AUTHORISE US TO) DISCLOSE ANY INFORMATION ABOUT YOU TO LAW ENFORCEMENT, OTHER GOVERNMENT OFFICIALS, ANY LAWSUIT OR ANY OTHER THIRD PARTY THAT WE, IN OUR SOLE DISCRETION, BELIEVE NECESSARY OR APPROPRIATE IN CONNECTION WITH AN INVESTIGATION OF FRAUD, INTELLECTUAL PROPERTY INFRINGEMENT, OR OTHER ACTIVITY THAT IS ILLEGAL OR MAY EXPOSE US, OR YOU, TO LIABILITY.\nENSURING INFORMATION IS ACCURATE AND UP TO DATE\n• We take reasonable precautions to ensure that the Personal Information we Collect, Use and Disclose is complete, relevant and up-to-date. However, the accuracy of that information depends to a large extent on the information you provide. That’s why we recommend that you:\n• Let us know if there are any errors in your Personal Information; and\n• Keep us up-to-date with changes to your Personal Information such as your name or address.\n\n\nHOW WE PROTECT YOUR INFORMATION\n\n• We are very concerned about safeguarding the confidentiality of your personal data. We employ administrative, physical and electronic measures designed to protect your information from unauthorised access.\n• By using this website or the Services or providing Personal Information to us, you agree that we can communicate with you electronically regarding security, privacy, and administrative issues relating to your use of this website or Services.\n• We use commercially reasonable physical, managerial, and technical safeguards to preserve the integrity and security of your Personal Information. We cannot, however, ensure or warrant the security of any information you transmit to us and you do so at your own risk. Once we receive your transmission of information, we make commercially reasonable efforts to ensure the security of our systems. However, please note that this is not a guarantee that such information may not be accessed, disclosed, altered, or destroyed by breach of any of our physical, technical, or managerial safeguards. If we learn of a security systems breach, then we may attempt to notify you electronically so that you can take appropriate protective steps.\n• Notwithstanding anything to the contrary in this Policy, we may preserve or disclose your information if we believe that it is reasonably necessary to comply with a law, regulation or legal request; to protect the safety of any person; to address fraud, security or technical issues; or to protect our rights or property. However, nothing in this Policy is intended to limit any legal defences or objections that you may have to a third party, including a government’s, request to disclose your information.\n• We strictly advise you not to share any personal information regarding your bank account details or other confidential information with any other user on the website and in case you do so, you shall be personally responsible for the same. We shall in no such case be held responsible or liable for the same.\n\n\nYOUR CHOICES ABOUT YOUR INFORMATION\n\n• You have several choices regarding use of information on our Services:\n• Email and Phone Number Communications: We will periodically send you free newsletters and e- mails that directly promote the use of our website, or Services. When you receive newsletters or promotional communications from us, you may indicate a preference to stop receiving further communications from us and you will have the opportunity to “opt-out” by following the unsubscribe instructions provided in the e-mail you receive or by contacting us directly. Despite your indicated e-mail preferences, we may send you service related communications, including notices of any updates to our Terms of Use or Privacy Policy.\n• Changing or Deleting Your Personal Data: You may change any of your personal information by visiting the website and following the directions therein or by emailing us at support@dlux.com. You may request deletion of your personal data by us, and we will use commercially reasonable efforts to honour your request, but please note that we may be required to keep such information and not delete it (or to keep this information for a certain time, in which case we will comply with your deletion request only after we have fulfilled such requirements). When we delete any information, it will be deleted from the active database, but may remain in our archives. We may also retain your information for fraud prevention or similar purposes.\n• You may, of course, decline to submit personal data through the website, in which case, we may not be able to provide certain services to you. You can review and correct the information about you that we keep on file by editing your account settings or by contacting us directly at support@dlux.com.\n\n\nCHILDREN’S PRIVACY\n\nProtecting the privacy of young children is especially important. Thus, we do not knowingly collect or solicit personal information from anyone under the age of 18 or knowingly allow such persons to register. If you are under 18, please do not attempt to register for the Service or send any information about yourself to us, including your name, address, phone number, or email address. No one under age 18 may provide any personal data for accessing the Service. In the event that we learn that we have collected personal data from a child under age 18, we will delete that information as quickly as possible. If you believe that we might have any information from or about a child under the age of 18, please contact us.\n\n\nMERGERS AND ACQUISITIONS\n\nIn case of a merger or acquisition, we reserve the right to transfer all the information, including personal data, stored with us to the new entity or company thus formed. Any change in the website’s policies and standing will be notified to you through email.\n\n\nLINKS TO THIRD PARTY WEBSITES\n\nOur website contains links to other websites. The fact that we link to a website is not an endorsement, authorisation or representation of our affiliation with that third party. We do not exercise control over third party websites. These other websites may place their own cookies or other files on your computer, collect data or solicit personal information from you. Other sites follow different rules regarding the use or disclosure of the personal information you submit to them. We encourage you to read the privacy policies or statements of the other websites you visit.\n\n\nNOTIFICATION PROCEDURES\n\nIt is our policy to provide notifications, whether such notifications are required by law or are for marketing or other business related purposes, to you via e-mail notice, written or hard copy notice, or through conspicuous posting of such notice on the website, as determined by us in our sole discretion. We reserve the right to determine the form and means of providing notifications to you, provided that you may opt out of certain means of notification as described in this Privacy Policy.\n\n\nDO NOT TRACK\n\n• Do Not Track (“DNT”) is a privacy preference that users can set in certain web browsers. DNT is a way for users to inform website and services that they do not want certain information about their webpage visits collected over time and across websites or online services.\n• We are committed to providing you with meaningful choices about the information collected on our website for third party purposes, and that is why we provide the opt-out links. However, we do not recognise or respond to browser-initiated DNT signals, as the Internet industry is currently still working toward defining exactly what DNT means, what it means to comply with DNT, and a common approach to responding to DNT.\n\n\nOPTING OUT OF INFORMATION SHARING\n\n• We understand and respect that not all users may want to allow us to share their information. If you do not want us to share your information, please contact us through the support@dlux.com and we will remove your information as soon as reasonably practicable. When contacting us, please clearly state your request, including your name, mailing address, email address and phone number.\n• However, under the following circumstances, we may still be required to share your personal information:\n• if we are responding to court orders or legal process, or if we need to establish or exercise our legal rights or defend against legal claims.\n• If we believe it is necessary to share information in order to investigate, prevent or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of our Terms of Use or as otherwise required by law.\n• If we believe it is necessary to restrict or inhibit any user from using any of our Site, including, without limitation, by means of “hacking” or defacing any portion thereof.\n\n\nPHISHING OR FALSE EMAILS\n\nIf you receive an unsolicited email that appears to be from us or one of our members that requests personal data (such as your credit card, login, or password), or that asks you to verify or confirm your account or other personal information by clicking on a link, that email was likely to have been sent by someone trying to unlawfully obtain your information, sometimes referred to as a “phisher” or “spoofer.” We do not ask for this type of information in an email. Do not provide the information or click on the link. Please contact us on the contact details provided on the website if you get an email like this.\n\n\nCHANGES TO OUR PRIVACY POLICY\n\nWe may update this Privacy Policy and information security procedures from time to time. If these privacy and/or information security procedures materially change at any time in the future, we will post the new changes conspicuously on the website to notify you and provide you with the ability to opt out in accordance with the provisions set forth above.\nContinued use of our website and Service, following notice of such changes shall indicate your acknowledgement of such changes and agreement to be bound by the terms and conditions of such changes.\n\n\nBREACH OF PRIVACY POLICY\n\nWe reserve the right to terminate or suspend any account or delete certain contents from any profile or public domain within the ambit of this website if the said account or content is found to be in violation of our privacy policy. We sincerely request you to respect privacy and secrecy concerns of others. The jurisdiction of any breach or dispute shall be determined in accordance with the terms of use of the website.\n\n\n\nNO RESERVATIONS\n\nWe do not accept any reservation or any type of limited acceptance of our privacy policy. You expressly agree to each and every term and condition as stipulated in this policy without any exception whatsoever.\n\n\nNO CONFLICT\n\nThe policy constitutes a part of the user terms. We have taken utmost care to avoid any inconsistency or conflict of this policy with any other terms, agreements or guidelines available on our website. In case there exists a conflict, we request you to kindly contact us for the final provision and interpretation.\n\n\nCONTACT US\n\nIf you have any questions about this Privacy Policy, our practices relating to the website, or your dealings with us, please contact us at support@dlux.com."
+  },
+  {
+    "title": "Terms & Conditions",
+    "href":"terms-of-service",
+    "content": "These terms and conditions set forth the terms and conditions under which DLUX (ABN 93 627 297 474) of level 10, 440 Collins Street, Melbourne, VIC 3000 (DLUX, we, or us) provides you access to giveaways, and governs your use of our website located at lmctplus.com (the Site), and the DLUX Members platform made available through the Site (the Software) and the information, content, features and services provided through the Site (together with the Software, collectively, the Service).\nYOUR USE OF THE SITE AND/OR THE SERVICE, OR THE PURCHASE OF ONE OF OUR MEMBERSHIPS, SIGNIFIES YOUR AGREEMENT TO THESE TERMS AND CONDITIONS AND CONSTITUTES YOUR BINDING ACCEPTANCE OF THIS THEM, INCLUDING ANY MODIFICATIONS THAT DLUX MAKES FROM TIME TO TIME.\nIf you do not agree to these terms and conditions, you may not use the Site or the Service.\nDLUX may amend these terms and conditions at any time by posting the amended Terms and conditions on the Site, and you agree that you will be bound by any changes to these terms and conditions. DLUX may make changes to the Site and/or the Service at any time. You understand that DLUX may discontinue or restrict your use of the Site and/or the Service for any reason or no reason with or without notice.\n\nPrivacy Policy\nBy clicking purchasing a membership and using our platform or entering one of our giveaways, you represent that you have read and consent to our Privacy Policy in addition to these terms and conditions. DLUX may revise the Privacy Policy at any time, and the new versions will be posted on the Site. If at any point you do not agree to any portion of the Privacy Policy, you must immediately stop using the Site and/or the Service.\n\nThe Services\nThe DLUX Site is a membership rewards marketplace that offers its members discounts at Australian retail partners, in app coins to use for services and products within the marketplace and in app games. Members get access to a member’s dashboard where they can utilise the discounts on offer, use their redeemed coins for purchases and manage all their payments depending on what package they have and update details as needed. DLUX coins are an in-app currency intended for use exclusively within the DLUX Platform and DLUX Marketplace. Users can earn these coins by participating in challenges and games available through the DLUX App and Web Portal. The coin value amount for the listed product and services is decided by DLUX. Please refer to section 9 for marketplace terms and conditions.\nCoins can be redeemed at the DLUX Marketplace and Garage, with more features to come.\nImportant: DLUX coins do not hold any monetary value and cannot be redeemed for cash under any circumstances.\nDLUX reserves the right to add, change, modify, suspend or discontinue any portion of the Service or game, in its sole discretion, at any time. Your use of the Site and/or the Service, including the availability of new services through the Site, shall be subject to these terms and conditions. In addition, DLUX may impose limits on any portion of the Service or restrict your access to portions of or the entire Site in its sole discretion without notice or liability.\n\nSupport\nDLUX supports all registered and official Australian Business Partners of the DLUX Network. To become a registered partner please go to bit.ly/lmctpartners\n\nRefunds, Returns, and Exchanges\nBy purchasing a membership or a one-time package for our rewards platform, you are providing support to the DLUX brand. Memberships and one-time packages purchased during a promotional period or giveaway are non-refundable.\nOur goods and services come with guarantees that cannot be excluded under Australian Consumer Law. For major failures, you are entitled to cancel your service contract with us; and a refund for the unused portion or compensation for its reduced value.\nYou are also entitled to choose a refund or replacement for major failures with goods.\nIf a failure with the goods or service does not amount to a major failure, you are entitled to have the failure rectified in a reasonable time. If this is not done, you are entitled to a refund for the goods and to cancel the contract for the service. Refunds or rectifications cannot be given for reasons such as change of mind, not following instructions or failure to understand properly.\n\nAccount Registration\nTo use certain portions of the Site and Service, you will be directed to register on the Site and create a user profile or account (Account). Eligibility is limited to persons 18 or older.\nAs part of the registration process, you may be asked to submit your name, address, email address and/or similar information and to select a password. You agree that all information you provide to DLUX will be true, accurate, current, and complete. Failure to provide such information shall constitute a breach and may result in termination of your Account. You must maintain confidentiality of your password and notify DLUX of any unauthorized use or breach.\nEmployees, directors, managers and their immediate family or household members may not win giveaways.\n\nTermination of Account\nYou understand DLUX may stop offering the Service or cancel your Account, delete your information at any time without notice.\nTo cancel your account, log in to your DLUX web portal and follow cancellation instructions. Loyalty memberships are non-refundable.\n\nMembership Packages\nCustomers can select Once off Packages or become monthly Loyalty Members.\n\nTermination of Loyalty Membership\nCancellation done via the portal with no refunds on loyalty memberships. Subscription cancellation rules and payment retry details provided.\n\nUse of Site and Service\nYou agree not to violate laws or disrupt the Service. You must not infringe intellectual property or disrupt others' use of the Site or Service.\nComments you submit become the property of DLUX. Monitoring and disclosure may occur as necessary for the Service and legal requirements.\n\nThird-Party Products and Discounts\nThird party products and discounts are for paid members. DLUX disclaims responsibility for these third parties.\n\nHyperlinks\nThe Site contains links to third-party sites at your own risk. Linking to the Site requires written consent and must follow DLUX policies.\n\nIntellectual Property\nAll content on the Site is DLUX property protected by law and may not be copied or reused without permission.\n\nRepresentation and Warranties of Members\nMembers shall not manipulate contest results or contact affiliates for such purposes.\n\nGiveaway Disclaimers\nDisputes related to contests are resolved individually. DLUX disclaims liability for damages arising from contests\n\nAffiliate Program Terms and Conditions\nGoverns participation, obligations, compensation, intellectual property use, confidentiality, non-compete, governing law, and termination for affiliates promoting the Company’s services."
+  },
+  {
+    "title": "Contact Support",
+    "href":"contact-support",
+    "content": "Chính sách hủy – hoàn vé được xây dựng nhằm đảm bảo quyền lợi và quyền trách nhiệm rõ ràng giữa khách hàng và nhà cung cấp dịch vụ trong trường hợp hủy bỏ hoặc thay đổi đặt vé dịch vụ. Khách hàng có quyền yêu cầu hủy vé với điều kiện báo trước thời gian quy định, thường được tính bằng ngày hoặc giờ trước ngày diễn ra sự kiện, chuyến đi, hoặc lịch trình phục vụ. Việc hoàn tiền phụ thuộc vào thời điểm hủy vé, loại vé được mua và các điều kiện cụ thể của từng sản phẩm dịch vụ. Các loại phí hủy sẽ được áp dụng tương ứng, ví dụ như phí hủy toàn phần, phí hủy một phần hoặc không được hoàn tiền trong trường hợp hủy trễ hạn quy định. Để thực hiện hủy vé và yêu cầu hoàn tiền, khách hàng bắt buộc phải liên hệ với bộ phận chăm sóc khách hàng thông qua các kênh hỗ trợ chính thức như email, điện thoại hoặc hệ thống quản lý trực tuyến. Mỗi yêu cầu sẽ được xem xét và xử lý dựa trên chính sách từng thời điểm. Trong một số trường hợp, nhà cung cấp có thể đề nghị chuyển đổi dịch vụ thay vì hoàn tiền nhằm tạo điều kiện thuận lợi cho khách hàng. Tuy nhiên, các trường hợp bất khả kháng như thiên tai, dịch bệnh, hay thay đổi pháp luật cũng được xem xét đặc biệt theo từng hoàn cảnh. Chúng tôi cam kết minh bạch, công bằng trong việc giải quyết mọi yêu cầu hủy và hoàn vé nhằm bảo vệ tốt nhất quyền lợi khách hàng."
+  },
+  {
+    "title": "FAQ",
+    "href":"faq",
+    "content": "Chúng tôi hiểu rằng trong quá trình sử dụng dịch vụ, khách hàng có thể phát sinh các vấn đề, thắc mắc hoặc khiếu nại về chất lượng dịch vụ, quá trình phục vụ hoặc các sự cố liên quan. Do đó, chúng tôi xây dựng quy trình giải quyết khiếu nại minh bạch, nhanh chóng và hiệu quả như sau: Khách hàng khi gặp sự cố hoặc bất đồng có thể gửi yêu cầu khiếu nại qua các kênh liên lạc chính thức như email, số điện thoại hỗ trợ khách hàng, hoặc mẫu phản hồi trực tuyến trên website. Khi tiếp nhận, bộ phận chăm sóc khách hàng sẽ ghi nhận và thông báo xác nhận đã nhận yêu cầu trong vòng 24 giờ làm việc. Sau đó, bộ phận liên quan sẽ tiến hành kiểm tra, thu thập thông tin, xác minh sự việc nhằm đưa ra phương án giải quyết phù hợp nhất. Quy trình xử lý khiếu nại được cam kết hoàn thành trong thời gian không quá 7 ngày làm việc, trong trường hợp đặc biệt có thể điều chỉnh và thông báo trước cho khách hàng. Toàn bộ kết quả xử lý sẽ được thông báo rõ ràng, chi tiết và khách hàng có quyền yêu cầu theo dõi hoặc tái thẩm nếu không đồng ý với kết quả ban đầu. Chúng tôi không cho phép bất kỳ hành vi cản trở hoặc gây khó dễ đối với khách hàng trong quá trình giải quyết khiếu nại; đồng thời, bảo đảm quyền lợi hợp pháp của tất cả các bên liên quan. Sự tin tưởng và hài lòng của khách hàng là ưu tiên hàng đầu, do đó mọi phản hồi đều được xem xét nghiêm túc nhằm không ngừng cải thiện chất lượng dịch vụ."
+  }
+]
+
+}

@@ -1,0 +1,17 @@
+.link-hover {
+  color: white;
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link-hover:hover {
+  padding: 5px 20px;
+  
+  color: #54b3d6;
+  background: #747474;
+  text-decoration: underline;
+  cursor: pointer;
+}
