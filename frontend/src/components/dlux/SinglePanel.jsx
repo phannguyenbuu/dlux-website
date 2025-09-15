@@ -4,6 +4,7 @@ import infor from '../../json/index.json';
 import { StyledButton } from './TitlePanel';
 import { ConfirmDialog } from './CommentDialog';
 
+
 export const WinnerPanel = ({img,title,content,prizes}) => {
   const colors =["#FDEB2A","#00d2f7ff","#ff5500ff"];
 
@@ -169,10 +170,10 @@ export const BigPanel = ({title, content, images, imgHeight=400}) => (
 );
 
 
-const SinglePanel = ({title,fontScale = 1,txtTop = '50%', backgroundUrl, 
+const SinglePanel = ({title,fontScale = 1,txtTop = '50%', backgroundUrl, p=0, overImg=true,
   content, img, imgTop = -100, width='20vw', maxWidth=360, height=400,...props}) => (
 
-  <Box position="relative" width={width} height={height} maxWidth={maxWidth}
+  <Box position="relative" width={width} height={height} maxWidth={maxWidth} p={p}
     sx = {{ background:  backgroundUrl ? `url("${backgroundUrl}")` : 'url("/images/panelBK_001.svg")',
       backgroundPosition: 'center',
       backgroundSize: 'cover',
@@ -185,12 +186,13 @@ const SinglePanel = ({title,fontScale = 1,txtTop = '50%', backgroundUrl,
         transform: 'scale(1.5)',  // Zoom ảnh khi hover Box
         transition: 'transform 0.4s ease',
       },
+      overflow: overImg ? "visible": "hidden",
       ...props.sx
      }}>
     {props.children}
     <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
       {img !== '' && <img src = {img} 
-        style={{marginTop: imgTop, width: '100%', maxWidth: 200,
+        style={{marginTop: imgTop, width: '100%', maxWidth: 1200,
         height:'auto', transition: 'transform 0.4s ease'}}/>}
     </Box>
         

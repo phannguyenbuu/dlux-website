@@ -135,23 +135,23 @@ export function ConfirmDialog({open, setOpen, ...props}) {
     <>
       <Dialog open={open} onClose={handleClose} 
           sx={{
-    '& .MuiPaper-root': {
-      width: 300,
-      height: 500,
-      color:"#fff",
-      backgroundImage: 'url("images/panelBK_001.svg")',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      border: '1px solid rgba(255,255,255,0.5)',
-      p: 5,
-      borderRadius: 5,
-      overflow:'visible',
-      display: 'flex', 
-      justifyContent: "flex-start"
-    },
-  }}>
+          '& .MuiPaper-root': {
+            width: 300,
+            height: 500,
+            color:"#fff",
+            backgroundImage: 'url("images/panelBK_001.svg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            border: '1px solid rgba(255,255,255,0.5)',
+            p: 5,
+            borderRadius: 5,
+            overflow:'visible',
+            display: 'flex', 
+            justifyContent: "flex-start"
+          },
+        }}>
       {props.img && <img src={props.img} style={{position:'absolute',
-        width:400, height:'auto',left:100,top:-50,
+        width:400, height:'auto',left:100,top:-50
       }}/>}
         <DialogTitle>{props.title}</DialogTitle>
         <DialogContent>

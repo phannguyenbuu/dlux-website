@@ -4,3 +4,5 @@ users.json
 frontend/public/
 counter.py
 node_modules/
+
+backend/__script/

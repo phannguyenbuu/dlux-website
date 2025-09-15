@@ -16,7 +16,7 @@ const isMobile = () => {
   return window.screen.innerWidth < 768;
 }
 
-export default function Homepage() {
+export default function GiveAway() {
   return (
     <>
       <AbstractBackground />
@@ -105,7 +105,7 @@ export default function Homepage() {
       </CenterBox>
 
       <TitlePanel title="CLIENTS REVIEW" />
-      <ScrollablePanels data={infor}>
+      <ScrollablePanels infor={infor}>
         <FlareEffect top={-60}/>
       </ScrollablePanels>
 

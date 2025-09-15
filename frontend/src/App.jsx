@@ -6,6 +6,10 @@ import TermsOfService from './terms-of-service'; // trang điều khoản
 import PrivacyPolicy from './privacy-policy';
 import FAQ from './faq';
 import Shop from './shop';
+import GiveAway from './giveaway';
+import Partner from './partner';
+import About from './about';
+import Discount from './discount';
 
 function App() {
   return (
@@ -16,6 +20,10 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/giveaway" element={<GiveAway />} />
+        <Route path="/partner" element={<Partner />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/discount" element={<Discount />} />
       </Routes>
     </LayoutCommon>
   );

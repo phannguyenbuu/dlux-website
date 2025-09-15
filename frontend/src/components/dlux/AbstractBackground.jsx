@@ -34,18 +34,6 @@ const AbstractBackground = () => (
       />
     </svg>
     
-    <img
-      alt="phone"
-      src="/static/media/main-screen.1f2e7a2c8df05ce0ef6c.png"
-      className="chakra-image css-1thmmmo"
-    />
-    
-    <img
-      alt="glow"
-      src="/static/media/main-prizes.1740ff184b25715e0506.png"
-      className="chakra-image css-7bf8x2"
-    />
-    
     <Box sx={{position:'absolute', left:150, top:100}}>
       
       <Typography sx={{fontSize:60, fontFamily:'Poppins', fontStyle:'italic', 

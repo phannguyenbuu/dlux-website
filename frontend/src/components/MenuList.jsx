@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Menu, { SubMenu, MenuItem } from 'rc-menu';
 import { Stack, Box } from '@mui/material';
-
+import { useNavigate } from 'react-router-dom';
 import 'rc-menu/assets/index.css';
 import './Component.css';
 import UseIsMobile from './hooks/UseIsMobile';
 import { Link } from 'react-router-dom';
 import '../css/style.css';
+import menus from '../json/menus.json';
 
 const HamburgerIcon = ({ onClick, open }) => (
     <button
@@ -29,7 +30,7 @@ const HamburgerIcon = ({ onClick, open }) => (
     </button>
 );
 
-function MenuList({ menus }) {
+function MenuList() {
   const isMobile = UseIsMobile();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -41,17 +42,12 @@ function MenuList({ menus }) {
     }
   };
 
-  function getHref(href){
-    // console.log('HREF',window.location.href 
-    //            , window.location.href.split('/').filter(Boolean));
+  const navigate = useNavigate();
+  const handleClick = (href) => {
 
-    return window.location.href 
-          && (!href.includes('rout'))
-          && (!href.includes('introduce'))
-                && window.location.href.split('/').filter(Boolean).length === 4
-                      ? href.replace('#', '')
-                      : href;
-  }
+    console.log('Href', href);
+    navigate(href.startsWith('/') ? href : '/' + href);
+  };
 
   return (
     <nav>
@@ -64,7 +60,7 @@ function MenuList({ menus }) {
           mode={isMobile ? 'inline' : 'horizontal'}
           style={{
             cursor: 'pointer',
-            marginTop: 30,
+            mt: 30,
             maxWidth: isMobile ? '100%' : 680,
             maxHeight: isMobile ? '100vh' : 60,
             border: 'none',
@@ -86,31 +82,12 @@ function MenuList({ menus }) {
           onClick={handleMenuClick} // thêm xử lý đóng menu khi click
         >
           {menus.map(({ title, href, choices }, index) =>
-            choices && choices.length > 0 ? (
-              <SubMenu key={`submenu-${index}`} title={title}>
-                {choices.map(({ text, href: choiceHref }, cIndex) => (
-                  <MenuItem key={`submenu-item-${cIndex}`}>
-                    {choiceHref ? (
-                      <a href={choiceHref} style={{ textDecoration: 'none', color: 'inherit' }}>
-                        {text}
-                      </a>
-                    ) : (
-                      text
-                    )}
-                  </MenuItem>
-                ))}
-              </SubMenu>
-            ) : (
-              <MenuItem key={`menuitem-${index}`}>
-                <a href={getHref(href)}
+              <MenuItem onClick={() => handleClick(href)}
                   style={{ textTransform: 'uppercase', textDecoration: 'none', color: 'inherit' }}>
                   {title}
-                </a>
               </MenuItem>
-            )
           )}
 
-          <Link to="/shop" className="link-hover">SHOP</Link>
         </Menu>
       )}
     </nav>

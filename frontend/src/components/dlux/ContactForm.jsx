@@ -1,21 +1,35 @@
 import { TextField, Button, Box, Typography } from "@mui/material";
 import React, { useState } from "react";
-import { CenterBox, StyledButton } from "./TitlePanel";
+import { CenterBox, StyledButton, FlareEffect } from "./TitlePanel";
 import CommentDialog,{ConfirmDialog} from "./CommentDialog";
+import Autocomplete from '@mui/material/Autocomplete';
+import nations from "../../json/nation.json";
 
-const ContactForm = () => {
+const ContactForm = ({mode="contact"}) => {
+  const [selectedCountry, setSelectedCountry] = useState(null);
+
+  const handleCountryChange = (event, newValue) => {
+  setSelectedCountry(newValue);
+  setFormData(prev => ({
+    ...prev,
+    country: newValue ? newValue.name : '',
+  }));
+};
+
   const [formData, setFormData] = useState({
     fullName: "",
     nickname: "",
     address: "",
     phoneNumber: "",
     description: "",
+    country: "",
   });
 
   const [status, setStatus] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    console.log(name,value);
     setFormData((prev) => ({
       ...prev,
       [name]: value,
@@ -23,7 +37,7 @@ const ContactForm = () => {
   };
 
   const handleSubmit = () => {
-    // e.preventDefault();
+    e.preventDefault();
 
     // Kiểm tra các trường quan trọng
     if (!formData.fullName.trim()) {
@@ -36,11 +50,9 @@ const ContactForm = () => {
       return false;
     }
 
-    // Nếu cần, bạn có thể thêm các validate khác, ví dụ validate định dạng số điện thoại, ...
-
     setStatus(null);
     console.log("Form submitted:", formData);
-    // setStatus("Form submitted successfully!");
+
     setFormData({
       fullName: "",
       nickname: "",
@@ -48,6 +60,7 @@ const ContactForm = () => {
       email: "",
       phoneNumber: "",
       description: "",
+      country: "", // Nếu có
     });
 
     return true;
@@ -62,10 +75,11 @@ const ContactForm = () => {
       style: { color: "white",borderRadius: 10 },
     },
     sx: {
-      
+
       "& .MuiOutlinedInput-root": {
         "& fieldset": {
-          borderColor: "#747474",
+          borderColor: "#000",
+          backgroundColor: "#061c32ff",
         },
         "&:hover fieldset": {
           borderColor: "white",
@@ -76,7 +90,7 @@ const ContactForm = () => {
       },
     },
   };
-  
+
   return (
     <Box
       component="form"
@@ -91,6 +105,7 @@ const ContactForm = () => {
         p: 2,
       }}
     >
+      <FlareEffect top={-30}/>
       
       <TextField
         label="Full Name"
@@ -102,6 +117,7 @@ const ContactForm = () => {
         {...commonTextFieldProps}
       />
 
+      {mode === "contact" &&
       <TextField
         label="Nickname"
         name="nickname"
@@ -109,7 +125,7 @@ const ContactForm = () => {
         onChange={handleChange}
         fullWidth
         {...commonTextFieldProps}
-      />
+      />}
 
       <TextField
         label="Address"
@@ -130,7 +146,6 @@ const ContactForm = () => {
         fullWidth
         {...commonTextFieldProps}
       />
-
       
       <TextField
         label="Email"
@@ -143,8 +158,52 @@ const ContactForm = () => {
         {...commonTextFieldProps}
       />
 
+      {mode === "partner" && <>
+        <TextField label="Business Name" name="business" value={formData.business} 
+          onChange={handleChange} fullWidth {...commonTextFieldProps} />
+        <TextField label="Your website" name="website" value={formData.website} 
+          onChange={handleChange} fullWidth {...commonTextFieldProps} />
+        
+      </>}
+
+      <Autocomplete
+        options={nations}
+        getOptionLabel={(option) => `${option.name} (${option.dial_code})`}
+        value={selectedCountry}
+        onChange={handleCountryChange}
+        renderInput={(params) => (
+          <TextField
+            {...params}
+            label="Select a country"
+            fullWidth
+            InputLabelProps={{
+              style: { color: "white", borderRadius: 10 },
+            }}
+            InputProps={{
+              ...params.InputProps,
+              style: { color: "white", borderRadius: 10 },
+            }}
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "none",
+                  backgroundColor: "#061c32ff",
+                },
+                "&:hover fieldset": {
+                  borderColor: "white",
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "white",
+                },
+              },
+            }}
+          />
+        )}
+        sx={{ mt: 2 }}
+      />
+
       <TextField
-        label="Description to Admin"
+        label="Description"
         name="description"
         value={formData.description}
         onChange={handleChange}
@@ -153,6 +212,9 @@ const ContactForm = () => {
         fullWidth
         {...commonTextFieldProps}
       />
+
+      
+
       <CenterBox>
         {status && (
           <Typography variant="body2" color="success.main" align="center">

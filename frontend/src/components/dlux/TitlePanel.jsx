@@ -31,13 +31,13 @@ export default function TitlePanel({title, ...props}) {
 }
 
 export function CenterBox({direction='column',top=0, gap=0, ...props}) {
-    return <Box id={props.id} sx={{display:'flex', marginTop:top, gap:gap, 
+    return <Box id={props.id} sx={{display:'flex', mt:top, gap:gap, 
         justifyContent:'center', alignItems:'center', flexDirection:direction}}>
             {props.children}
         </Box>
 }
 
-export function StyledButton({title, onClick, hash, DialogComponent , dialogProps}) {
+export function StyledButton({title, onClick, hash, DialogComponent , dialogProps, sx}) {
     const [open, setOpen] = useState(false);
 
     const handleClick = () => {
@@ -69,7 +69,9 @@ export function StyledButton({title, onClick, hash, DialogComponent , dialogProp
                 marginLeft: 2,
                 color: '#fff', textTransform: 'none',
                 boxShadow: '0 0 15px 5px rgba(165, 219, 255, 0.6)',
-                background: 'linear-gradient(0deg, #65ceffff 0%, #00a6ffff 30%,#00a6ffff 70%, #65ceffff 100%)'}}
+                background: 'linear-gradient(0deg, #65ceffff 0%, #00a6ffff 30%,#00a6ffff 70%, #65ceffff 100%)',
+                ...sx,
+            }}
                 
                 onClick = {handleClick}
             >
@@ -80,4 +82,17 @@ export function StyledButton({title, onClick, hash, DialogComponent , dialogProp
                 open={open}
                 setOpen={setOpen}/>}
           </>
+}
+
+export function FlareEffect({size=1200, top}) {
+    return <Box
+          sx={{
+            position:'absolute',
+            width: size,
+            height: size,
+            mt: top,
+            pointerEvents: 'none',
+            background: 'radial-gradient(circle, rgba(103, 235, 255, 0.25) 0%,rgba(103, 235, 255,0.1) 20%, rgba(103, 235, 255,0) 50%)',
+          }}
+        />;
 }

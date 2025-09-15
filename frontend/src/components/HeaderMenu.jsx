@@ -3,8 +3,6 @@ import Logo from './Logo';
 import MenuList from './MenuList';
 import UseIsMobile  from './hooks/UseIsMobile';
 import { Stack, Box, Button } from '@mui/material';
-import { alpha } from '@mui/material/styles';
-import { Link } from 'react-router-dom';
 
 const HeaderMenu = ({ menus, logo, menuLeft = 0, color_1 = '#000' }) => 
   {
@@ -12,8 +10,7 @@ const HeaderMenu = ({ menus, logo, menuLeft = 0, color_1 = '#000' }) =>
     const isMobile = UseIsMobile();
   
     return (
-  <header
-    
+  <Stack
     style={{ position: 'fixed',
       top:0,
       zIndex:999,
@@ -26,24 +23,24 @@ const HeaderMenu = ({ menus, logo, menuLeft = 0, color_1 = '#000' }) =>
      }}
   >
     
-      <Stack direction="row">
+      <Stack direction="row" spacing={5}>
         {logo && logo.image ? <Logo image={logo.image} href = {logo.href}/>: null}
         <MenuList menus={menus} color_1={color_1} />
        
-        <Button 
+        <Button mt={30}
+            ml={window.screen.innerWidth - 200}
           sx={{fontSize:20, width:180, height:40, borderRadius:3, 
             textTransform: 'none', 
             color: '#fff',
-            marginTop:5,
-            marginLeft: isMobile ? 10 : 50,
+            
             border:'1px solid #00b3ffff',
             padding: isMobile? '0px 15px': '0px 60px'}}
-          onClick={() => window.location.href = '/#login'}>
+          onClick={() => window.location.href = '/login'}>
           Login
         </Button>
       </Stack>
     
-  </header>
+  </Stack>
 )};
 
 export default HeaderMenu;

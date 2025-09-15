@@ -5,6 +5,7 @@ import { Stack, Box, Typography, Button } from '@mui/material';
 import infor from "../json/index.json";
 import { Link } from 'react-router-dom';
 import '../css/style.css';
+import menus from '../json/menus.json';
 
 const socialButtons = [
   { title: 'Facebook', href: 'https://facebook.com' },
@@ -66,15 +67,15 @@ const FooterWidget = ({ color2, quickLinks}) => {
           
             <Stack spacing={2}>
               
-              {quickLinks && quickLinks.map((button, idx) => 
+              {menus.map(({ title, href, choices }, idx) => 
                 <Button
                   key={idx}
-                  title={`→${button.title}`}
+                  title={`→${title}`}
                   sx={{ color: 'white', textAlign: 'left',  
                     fontSize: 12, 
                     textDecoration: 'none' }}
                 >
-                    {button.title}
+                    {title}
                   
                 </Button>
               )}

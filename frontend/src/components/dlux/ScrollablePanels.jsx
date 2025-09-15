@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Box, Stack, Button } from '@mui/material';
 import SinglePanel from './SinglePanel';
 
@@ -6,18 +6,29 @@ const isMobile = () => {
   return window.screen.width < 768;
 }
 
-const ScrollablePanels = ({ infor }) => {
+const ScrollablePanels = ({ data, ...props }) => {
   const scrollRef = useRef(null);
-
+  let interval = null;
+  const [panelWidth, setPanelWidth] = useState(0);
+  
   const scrollByOffset = (offset) => {
+    if(interval) clearInterval(interval);
     if (scrollRef.current) {
       scrollRef.current.scrollBy({ left: offset, behavior: 'smooth' });
     }
   };
 
+  useEffect(() => {
+    interval = setInterval(() => {
+      scrollByOffset(isMobile() ? 330 : 500);
+    }, 3000); // 3 giây scroll một lần
+
+    return () => clearInterval(interval); // cleanup khi component unmount
+  }, []);
+
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      
+      {props.children}
 
       <Box 
         ref={scrollRef} 
@@ -34,8 +45,8 @@ const ScrollablePanels = ({ infor }) => {
           alignItems="center"
           sx={{ width: 'max-content', minWidth: '100%' }}
         >
-          {infor.review.map((el, idx) => (
-            <SinglePanel key={idx} {...el} img=''
+          {data.review.map((el, idx) => (
+            <SinglePanel key={idx} {...el}
               width= {isMobile() ? "80vw" : "40vw"}
               sx={{ minWidth: isMobile() ? "80vw" : "40vw" }}
               fontScale = {isMobile() ? 0.8:1}

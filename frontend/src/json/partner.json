@@ -1,0 +1,91 @@
+
+{
+    "begin":
+        [
+        "We're Australia's largest rewards club, while stands as the premier luxury rewards club. We support businesses like yours in attracting new customers by providing exclusive discounts and special privileges to over 2 million Australians","Our customers enjoy significant savings through shopping with our partner businesses, while those businesses benefit from increased exposure to our growing customer base"],
+    "give":
+    {
+        "img":"/images/partners/rolex.png",
+        "width":"80vw",
+        "maxWidth":"80vw",
+        "title":"$75 MILLIONS",
+        "fontScale": 2,
+        "txtTop": 100,
+        "imgTop": 0,
+        "content":"IN PRIZES GIVEN AWAY & WE'VE GENERATED OUR PARTNERS HUNDREDS OF THOUSANDS IN ADDITIONAL SALES"
+    },
+    "aboutus":
+    {
+        "indexes":[{"title":"1 000 000<span style='color:#0497FD'>+</span>","content":"people weekly that access our platform"},
+                {"title":"<span style='color:#0497FD'>$</span>1 000 000","content":"returned to local Aussie businesses"}
+                ],
+        "contents": [
+            "This is where the magic happens",
+            "It’s simple, we have MILLIONS of people weekly that access our platform to utilize exclusive offers from businesses like you. They also get access to Australia’s original and best giveaways",
+            "We’ve also given back over $1,000,000 to local Aussie businesses. We`re running weekly promotional giveaways, which means engagement is high all year long. More engagement more traffic to your business",
+            "As we`ve now not only expanded from cars to bikes and boats but we`ve now stepped into giving away homes to give Aussies a chance to win their dream house!"
+        ],
+        "button": "Become A Partner"
+    },
+    "review": [
+    {
+      "img":"/images/partners/7fab700e444696c267c91ee8fd4a08c2.jpg",
+      "title":"",
+      "imgTop":0,
+      "content":"",
+      "height":320,
+      "overImg": false
+    },
+    {
+      "img":"/images/partners/59da8eebfafa823631b01c3854520827.jpg",
+      "title":"",
+      "content":"",
+      "imgTop":0,
+      "height":320,
+      "overImg": false
+    },
+    {
+      "img":"/images/partners/dbe35ba46dbb7d7b79402066172da603.jpg",
+      "title":"",
+      "content":"",
+      "imgTop":0,
+      "height":320,
+      "overImg": false
+    },
+    
+    {
+      "img":"/images/partners/images_1.jfif",
+      "title":"",
+      "content":"",
+      "imgTop":0,
+      "height":320,
+      "overImg": false
+    },
+    {
+      "img":"/images/partners/images_2.jfif",
+      "title":"",
+      "content":"",
+      "imgTop":0,
+      "height":320,
+      "overImg": false
+    },
+    {
+      "img":"/images/partners/images_3.jfif",
+      "title":"",
+      "content":"",
+      "height":320,
+      "overImg": false
+    },
+    {
+      "img":"/images/partners/images_4.jfif",
+      "title":"",
+      "content":"",
+      "height":320,
+      "overImg": false
+    }
+        
+  ],
+  "winner": "Each and every giveaway has cash supplementary prizes that can ONLY be spent with our partners! With over 200 promotions to date, our supplementary prize winner can only spend their prize money EXCLUSIVELY with businesses like you!",
+  "contact": "Interested in joining LMCT+ as a partner? Fill out the form below and our team will be in touch within 24 hours to discuss how we can work together to promote your business to thousands of engaged Aussie members"
+
+}
