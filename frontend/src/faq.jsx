@@ -4,7 +4,7 @@ import infor from './json/faq.json';
 import LayoutCommon from './common';
 import { Stack, Typography, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 // import TextPreciseWidget from '../../components/TextPreciseWidget';
-import { HashLink } from 'react-router-hash-link';
+// import { HashLink } from 'react-router-hash-link';
 import { StarObj } from './components/dlux/AboutUsBackground';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 

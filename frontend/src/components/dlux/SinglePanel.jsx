@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Stack, Box, Button, Typography } from '@mui/material';
 import infor from '../../json/index.json';
-
+import { StyledButton } from './TitlePanel';
+import { ConfirmDialog } from './CommentDialog';
 
 export const WinnerPanel = ({img,title,content,prizes}) => {
   const colors =["#FDEB2A","#00d2f7ff","#ff5500ff"];
@@ -120,24 +121,11 @@ export const FamousGiveawayPanel = () => {
   const seconds = secondsLeft % 60;
 
   return (
-    <SinglePanel
-      backgroundUrl={infor.famousGiveaway.img}
-      title={infor.famousGiveaway.title}
-      content={infor.famousGiveaway.content}
-      width="80vw"
-      maxWidth={1800}
-      imgTop={0}
-      imgHeight={600}
+    <SinglePanel {...infor.famousGiveaway}
+      
       sx={{ border: '1px solid #00bbffff', overflow: 'hidden' }}
     >
-      <Button type="button" sx={{width: 320, height: 60, borderRadius: 5, 
-            fontSize: 20, marginTop: 5,
-            marginLeft: 2,
-            color: '#fff', textTransform: 'none',
-            boxShadow: '0 0 15px 5px rgba(165, 219, 255, 0.6)',
-            background: 'linear-gradient(0deg, #65ceffff 0%, #00a6ffff 30%,#00a6ffff 70%, #65ceffff 100%)'}}>
-            Enter Now
-          </Button>
+      <StyledButton title="Enter Now" hash="contact"/>
 
       <Typography
       sx={{backgroundColor:"#050e20",
@@ -181,8 +169,10 @@ export const BigPanel = ({title, content, images, imgHeight=400}) => (
 );
 
 
-const SinglePanel = ({title,fontScale = 1,txtTop = '50%', backgroundUrl, content, img, imgTop = -100, width='20vw', maxWidth=360, imgHeight=400,...props}) => (
-  <Box position="relative" width={width} height={imgHeight} maxWidth={maxWidth}
+const SinglePanel = ({title,fontScale = 1,txtTop = '50%', backgroundUrl, 
+  content, img, imgTop = -100, width='20vw', maxWidth=360, height=400,...props}) => (
+
+  <Box position="relative" width={width} height={height} maxWidth={maxWidth}
     sx = {{ background:  backgroundUrl ? `url("${backgroundUrl}")` : 'url("/images/panelBK_001.svg")',
       backgroundPosition: 'center',
       backgroundSize: 'cover',

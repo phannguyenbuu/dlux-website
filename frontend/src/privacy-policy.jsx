@@ -4,7 +4,7 @@ import infor from './json/index.json';
 import LayoutCommon from './common';
 import { Stack, Box, Typography, Button } from '@mui/material';
 // import TextPreciseWidget from '../../components/TextPreciseWidget';
-import { HashLink } from 'react-router-hash-link';
+// import { HashLink } from 'react-router-hash-link';
 
 window.TITLE = 'Privacy Policy';
 

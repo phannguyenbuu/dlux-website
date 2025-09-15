@@ -22,22 +22,8 @@ export default function LayoutCommon({ children, logo, menuLeft = '0', ...props 
         }))
     : [];
 
-  // Lấy đối tượng logo từ quickLinks
-
-
-  
-  // const logoLink = quickLinks
-  //   ? quickLinks.find(link => link.title === 'logo')
-  //   : null;
-
-    // console.log(quickLinks, logoLink);
-
-
-
   return (
     <>
-      {/* <DjangoListen /> */}
-
       <HeaderMenu 
         menus={updatedQuickLinks} 
         logo={logo}
@@ -45,7 +31,6 @@ export default function LayoutCommon({ children, logo, menuLeft = '0', ...props 
         {...props}
       />
 
-      {/* Nội dung từng trang được inject ở đây */}
       <main style={{ position: 'relative', paddingTop: 120, marginTop: window.MENU_HEIGHT }}>
         {children}
       </main>
@@ -55,7 +40,7 @@ export default function LayoutCommon({ children, logo, menuLeft = '0', ...props 
       <FooterWidget
         color1='#fff'
         color2='#006fafff'
-        user={{ first_name: '📞 0909 769 289', last_name: 'Đường XT 24, Ho Chi Minh City, Vietnam' }}
+        user={{ first_name: '', last_name: '' }}
         quickLinks={updatedQuickLinks}
         
         socialButtons={socialButtons}

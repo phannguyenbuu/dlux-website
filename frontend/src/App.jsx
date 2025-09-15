@@ -5,6 +5,7 @@ import HomePage from './home'; // chuyển nội dung index.jsx sang đây
 import TermsOfService from './terms-of-service'; // trang điều khoản
 import PrivacyPolicy from './privacy-policy';
 import FAQ from './faq';
+import Shop from './shop';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/faq" element={<FAQ />} />
-        {/* thêm các route khác nếu có */}
+        <Route path="/shop" element={<Shop />} />
       </Routes>
     </LayoutCommon>
   );

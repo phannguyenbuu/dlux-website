@@ -5,6 +5,8 @@ import { Stack, Box } from '@mui/material';
 import 'rc-menu/assets/index.css';
 import './Component.css';
 import UseIsMobile from './hooks/UseIsMobile';
+import { Link } from 'react-router-dom';
+import '../css/style.css';
 
 const HamburgerIcon = ({ onClick, open }) => (
     <button
@@ -107,6 +109,8 @@ function MenuList({ menus }) {
               </MenuItem>
             )
           )}
+
+          <Link to="/shop" className="link-hover">SHOP</Link>
         </Menu>
       )}
     </nav>

@@ -1,13 +1,15 @@
 import React from 'react';
 import { Stack, Box, Button, Typography } from '@mui/material';
 import infor from '../../json/index.json';
+import { StyledButton } from './TitlePanel';
+
 const AbstractBackground = () => (
-  <Box position="relative" width="100vw" height='86vh' top={0} marginTop={0}
+  <Box position="relative" width="100vw" height='86vh'
     sx = {{ background: 'url("images/firstpage.png")',
       backgroundPosition: 'center center',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
-      marginTop: 0,
+      mt: 0,
      }}>
     
     <svg
@@ -45,38 +47,35 @@ const AbstractBackground = () => (
     />
     
     <Box sx={{position:'absolute', left:150, top:100}}>
-    
+      
       <Typography sx={{fontSize:60, fontFamily:'Poppins', fontStyle:'italic', 
         textShadow: '0 0 5px rgba(0, 0, 0, 1)',
-        fontWeight:700, color: '#fff'}}>AUSTRALIA`S</Typography>
-      <Typography sx={{fontSize:90, marginTop: -5, marginLeft: -2, fontFamily:'Poppins', 
+        fontWeight:700, color: '#fff'}}>AUSTRALIA</Typography>
+
+
+      <Stack direction="row" spacing={5}>
+      <Typography sx={{fontSize:90, mt: 0, ml: -2, fontFamily:'Poppins', 
         textShadow: '0 0 5px rgba(0, 0, 0, 1)',
-        fontStyle:'italic', fontWeight:700, color: '#20b3fd'}}>BEST</Typography>
-      <Typography p={1} sx={{paddingLeft:3, paddingRight:5,fontSize:60, marginTop: -2, 
-        marginLeft: -2, fontFamily:'Poppins', borderRadius:5,
-        width:'fit-content', backgroundColor:"#fff", fontStyle:'italic', 
-        
-        fontWeight:700, color: '#20b3fd'}}>REWARDS CLUB</Typography>
+        fontStyle:'italic', fontWeight:700, color: '#fd2020ff'}}>BEST</Typography>
+      
       <Typography sx={{fontSize:40, fontFamily:'Poppins', fontStyle:'italic', 
         textShadow: '0 0 5px rgba(0, 0, 0, 1)',
-        fontWeight:700, color: '#fff'}}>& SHOPPING TOOL</Typography>
-    
-    <Typography sx={{fontSize:18, marginTop: 5, width: 500, color:"#fff",
-      textShadow: '0 0 10px rgba(0, 0, 0, 1)'
-    }}>
-      {infor.home.content}
-    </Typography>
+        fontWeight:700, color: '#ff8000ff'}}>& SHOPPING TOOL</Typography>
+      </Stack>
+      
+      <Typography p={1} sx={{paddingLeft:3, paddingRight:5,fontSize:60, mt: 2, 
+          ml: -2, fontFamily:'Poppins', borderRadius:5,
+          width:'fit-content', backgroundColor:"#fff", fontStyle:'italic', 
+          transform:'rotate(-0deg)', zIndex:-1,
+          fontWeight:700, color: '#20b3fd'}}>REWARDS CLUB</Typography>
 
-    
-    <Button type="button" sx={{width: 280, height: 60, borderRadius: 5, 
-      fontSize: 20, marginTop: 5,
-      color: '#fff', textTransform: 'none',
-      boxShadow: '0 0 15px 5px rgba(165, 219, 255, 0.6)',
-      background: 'linear-gradient(0deg, #65ceffff 0%, #00a6ffff 30%,#00a6ffff 70%, #65ceffff 100%)'}}>
-      Join Now
-    </Button>
+      <Typography sx={{fontSize:18, width: 500, color:"#fff",mt:2,
+        textShadow: '0 0 10px rgba(0, 0, 0, 1)'
+      }}>
+        {infor.home.content}
+      </Typography>
   
-
+    <StyledButton title="Join Now" hash="contact"/>
     </Box>
   </Box>
 );

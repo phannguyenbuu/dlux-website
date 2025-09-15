@@ -5,124 +5,128 @@
   "services":[
     {
         "title": "AUTOMOTIVE",
-        "description": "Discover DLUX, Australia's leading shopping platform designed to bring you unbeatable savings. Featuring a powerful dashboard and an intuitive mobile app, DLUX delivers exceptional value and convenience for Australian shoppers",
-        "imageUrl": "/images/icons/car.png",
-        
+        "content": "Discover DLUX, Australia's leading shopping platform designed to bring you unbeatable savings. Featuring a powerful dashboard and an intuitive mobile app, DLUX delivers exceptional value and convenience for Australian shoppers",
+        "img": "/images/icons/car.png",
+        "txtTop":100,
+        "height":450,
         "color": "#000"
     },
       {
         "title": "HOMEWARE",
-        "description": "We have partnered with the leading experts in the industry to offer you exceptional deals on furniture, homeware, elegant decor, electrical supplies, plumbing essentials, and much more—helping you bring comfort and sophistication to your living space",
-        "imageUrl": "/images/icons/villa.png",
-        
+        "content": "We have partnered with the leading experts in the industry to offer you exceptional deals on furniture, homeware, elegant decor, electrical supplies, plumbing essentials, and much more—helping you bring comfort and sophistication to your living space",
+        "img": "/images/icons/villa.png",
+        "txtTop":100,
+        "height":450,
         "color": "#000"
     },
     {
-        "title": "MAERCHANDISE",
-        "description": "Your ultimate destination for exclusive offers on premium apparel, accessories, and must-have items from Australia’s top brands, designed to upgrade your style with a fresh, branded look",
-        "imageUrl": "/images/icons/homeware.png",
-        
+        "title": "MERCHANDISE",
+        "content": "Your ultimate destination for exclusive offers on premium apparel, accessories, and must-have items from Australia’s top brands, designed to upgrade your style with a fresh, branded look",
+        "img": "/images/icons/homeware.png",
+        "txtTop":100,
+        "height":450,
         "color": "#000"
     },
     {
         "title": "RETREAT",
-        "description": "Your perfect escape awaits with exclusive offers on luxurious accommodations, breathtaking views, world-class amenities, and unforgettable experiences—designed to create relaxation and elegance at every moment of your stay",
-        "imageUrl": "/images/icons/beach.png",
-        
+        "content": "Your perfect escape awaits with exclusive offers on luxurious accommodations, breathtaking views, world-class amenities, and unforgettable experiences—designed to create relaxation and elegance at every moment of your stay",
+        "img": "/images/icons/beach.png",
+        "txtTop":100,
+        "height":450,
         "color": "#000"
     },
     {
         "title": "INTERIOR",
-        "description": "We provide comprehensive interior decorating services that transform your living or working spaces into stunning environments that perfectly reflect your style and personality",
-        "imageUrl": "/images/icons/interior.png",
-        
+        "content": "We provide comprehensive interior decorating services that transform your living or working spaces into stunning environments that perfectly reflect your style and personality",
+        "img": "/images/icons/interior.png",
+        "txtTop":100,
+        "height":450,
         "color": "#000"
     },
     {
         "title": "JEWELRY",
-        "description": "Our expert jewelers and designers work meticulously to craft custom pieces that perfectly capture your vision, whether you're looking for timeless classics or modern designs",
-        "imageUrl": "/images/icons/jewelry.png",
-        
+        "content": "Our expert jewelers and designers work meticulously to craft custom pieces that perfectly capture your vision, whether you're looking for timeless classics or modern designs",
+        "img": "/images/icons/jewelry.png",
+        "txtTop":100,
+        "height":450,
         "color": "#000"
     }
-
-
   ],
 
   "partners":[
     {
         "title": "Adidas",
-        "description": "",
-        "imageUrl": "/images/partners/adidas.jpg",
+        "content": "",
+        "img": "/images/partners/adidas.jpg",
         "color": "#000"
     },
     {
         "title": "Ferrari",
-        "description": "",
-        "imageUrl": "/images/partners/ferrari.jpg",
+        "content": "",
+        "img": "/images/partners/ferrari.jpg",
         "color": "#000"
     },
     {
         "title": "Hilton",
-        "description": "",
-        "imageUrl": "/images/partners/hilton.jpg",
+        "content": "",
+        "img": "/images/partners/hilton.jpg",
         "color": "#000"
     },
 
     {
         "title": "LVMH",
-        "description": "",
-        "imageUrl": "/images/partners/LVMH.jpg",
+        "content": "",
+        "img": "/images/partners/LVMH.jpg",
         "color": "#000"
     },
 
     {
         "title": "melia",
-        "description": "",
-        "imageUrl": "/images/partners/melia.jpg",
+        "content": "",
+        "img": "/images/partners/melia.jpg",
         "color": "#000"
     },
 
     {
         "title": "Mercedes",
-        "description": "",
-        "imageUrl": "/images/partners/Mercedes.jpg",
+        "content": "",
+        "img": "/images/partners/Mercedes.jpg",
         "color": "#000"
     },
 
     {
         "title": "Mecedes AMG",
-        "description": "",
-        "imageUrl": "/images/partners/mercedes_amg.jpg",
+        "content": "",
+        "img": "/images/partners/mercedes_amg.jpg",
         "color": "#000"
     },
 
 
     {
         "title": "Nike",
-        "description": "",
-        "imageUrl": "/images/partners/nike.jpg",
+        "content": "",
+        "img": "/images/partners/nike.jpg",
         "color": "#000"
     },
 
     {
         "title": "Porches",
-        "description": "",
-        "imageUrl": "/images/partners/porches.jpg",
+        "content": "",
+        "img": "/images/partners/porches.jpg",
         "color": "#000"
     },
 
     {
         "title": "Paris Sant German",
-        "description": "",
-        "imageUrl": "/images/partners/PSG.jpg",
+        "content": "",
+        "img": "/images/partners/PSG.jpg",
         "color": "#000"
     },
 
     {
         "title": "Umbro",
-        "description": "",
-        "imageUrl": "/images/partners/umbro.jpg",
+        "content": "",
+        "img": "/images/partners/umbro.jpg",
         "color": "#000"
     }
   ],
@@ -142,27 +146,35 @@
   "features":[
     {
         "title": "",
-        "description": "",
-        "imageUrl": "/images/features/seven_network.png",
+        "content": "",
+        "img": "/images/features/seven_network.png",
+        "imgTop":0,
+        "height":250,
         "color": "#000"
     },
     {
         "title": "",
-        "description": "",
-        "imageUrl": "/images/features/sponsoredlinx.png",
+        "content": "",
+        "img": "/images/features/sponsoredlinx.png",
+        "imgTop":0,
+        "height":250,
         "color": "#000"
     },
     {
         "title": "",
-        "description": "",
-        "imageUrl": "/images/features/ten_network.png",
+        "content": "",
+        "img": "/images/features/ten_network.png",
+        "imgTop":0,
+        "height":250,
         "color": "#000"
     },
 
     {
         "title": "",
-        "description": "",
-        "imageUrl": "/images/features/the_age.png",
+        "content": "",
+        "img": "/images/features/the_age.png",
+        "imgTop":0,
+        "height":250,
         "color": "#000"
     }
   ],
@@ -195,7 +207,11 @@
     },
     "title": "2025 Tesla Cybertruck",
     "content": "Brand-New 2025 Tesla Cybertruck",
-    "img": "/images/tesla.png"
+    "maxWidth":1800,
+    "imgTop":0,
+    "height":600,
+    "width":"80vw",
+    "backgroundUrl": "/images/tesla.png"
   },
 
   "winners": [{
@@ -233,68 +249,93 @@
   "membership": [
     {
       "title":"Exclusive discounts",
-      "description":"Unlock access to substantial discounts at businesses across Australia, all for a low monthly membership fee",
-      "imageUrl": "/images/icons/beach.png"
+      "content":"Unlock access to substantial discounts at businesses across Australia, all for a low monthly membership fee",
+      "img": "/images/icons/beach.png",
+      "width":"40vw",
+      "txtTop": 100,
+      "height":450
     },
       {"title": "Flexibility to opt-out",
-      "description": "We value your freedom. Not feeling the ride anymore? Cancel your membership at any time, no strings attached",
-      "imageUrl": "/images/icons/car.png"
+      "content": "We value your freedom. Not feeling the ride anymore? Cancel your membership at any time, no strings attached",
+      "img": "/images/icons/car.png",
+      "width":"40vw",
+      "txtTop": 100,
+      "height":450
       },
       {"title": "Trusted partnerships",
-      "description": "We have partnered with the leading experts in the industry to offer you exceptional deals on furniture, homeware, elegant decor, electrical supplies, plumbing essentials, and much more—helping you bring comfort and sophistication to your living space",
-      "imageUrl": "/images/icons/homeware.png"
+      "content": "We have partnered with the leading experts in the industry to offer you exceptional deals on furniture, homeware, elegant decor, electrical supplies, plumbing essentials, and much more—helping you bring comfort and sophistication to your living space",
+      "img": "/images/icons/homeware.png",
+      "width":"40vw",
+      "txtTop": 100,
+      "height":450
     },
     {
       "title": "Expert support",
-      "description": "Got questions or need assistance? Our professional support team is always ready to help you navigate your journey with us",
-      "imageUrl": "/images/icons/jewelry.png"
+      "content": "Got questions or need assistance? Our professional support team is always ready to help you navigate your journey with us",
+      "img": "/images/icons/jewelry.png",
+      "width":"40vw",
+      "txtTop": 100,
+      "height":450
     }
   ],
 
   "review": [
     {
-      "imageUrl":"images/quotes.svg",
+      "img":"images/quotes.svg",
       "title":"SHARONH - Loyalty Member",
-      "description":"Excellent customer service! I was having issues logging in and they were onto it straight away. Finally logged in and was able to view the features on the site. I have taken full advantage of the Mates Rates part and was able to receive $100 off my first purchase at Naked Wines. Will definitely be making more use of their special offers"
+      "content":"Excellent customer service! I was having issues logging in and they were onto it straight away. Finally logged in and was able to view the features on the site. I have taken full advantage of the Mates Rates part and was able to receive $100 off my first purchase at Naked Wines. Will definitely be making more use of their special offers",
+      "height":250,
+      "txtTop":20
     },
     {
-      "imageUrl":"images/quotes.svg",
+      "img":"images/quotes.svg",
       "title":"JOSH B - Silver Package",
-      "description":"Purchased a coupe of times before but never really saw the point of being able to have access to the database until I logged in and had a proper look. Ended up saving myself 15% at Beaurepairs and will definitely be making use of the special offers they have next time I make a purchase."
+      "content":"Purchased a coupe of times before but never really saw the point of being able to have access to the database until I logged in and had a proper look. Ended up saving myself 15% at Beaurepairs and will definitely be making use of the special offers they have next time I make a purchase.",
+      "height":250,
+      "txtTop":20
     },
     {
-      "imageUrl":"images/quotes.svg",
+      "img":"images/quotes.svg",
       "title":"LIAMH - Silver Package",
-      "description":"Was able to get some sick discounts through the members portal after making a one off purchase. Might have to join soon to keep getting all the perks"
+      "content":"Was able to get some sick discounts through the members portal after making a one off purchase. Might have to join soon to keep getting all the perks",
+      "height":250,
+      "txtTop":20
     },
     {
-      "imageUrl":"images/quotes.svg",
+      "img":"images/quotes.svg",
       "title":"LIAMH - Silver Package",
-      "description":"Was able to get some sick discounts through the members portal after making a one off purchase. Might have to join soon to keep getting all the perks"
+      "content":"Was able to get some sick discounts through the members portal after making a one off purchase. Might have to join soon to keep getting all the perks",
+      "height":250,
+      "txtTop":20
     },
     {
-      "imageUrl":"images/quotes.svg",
+      "img":"images/quotes.svg",
       "title":"LIAMH - Silver Package",
-      "description":"Was able to get some sick discounts through the members portal after making a one off purchase. Might have to join soon to keep getting all the perks"
+      "content":"Was able to get some sick discounts through the members portal after making a one off purchase. Might have to join soon to keep getting all the perks",
+      "height":250,
+      "txtTop":20
     },
     {
-      "imageUrl":"images/quotes.svg",
+      "img":"images/quotes.svg",
       "title":"BEN A - Silver Package",
-      "description":"Nice meeting the boys and getting to know them at their meet and greets, absolute legends!"
+      "content":"Nice meeting the boys and getting to know them at their meet and greets, absolute legends!",
+      "height":250,
+      "txtTop":20
     },
     {
-      "imageUrl":"images/quotes.svg",
+      "img":"images/quotes.svg",
       "title":"JAMES S - Platinum Package",
-      "description":"Had the pleasure of meeting the team at one of their track days and can’t wait to be able to meet them again!"
+      "content":"Had the pleasure of meeting the team at one of their track days and can’t wait to be able to meet them again!",
+      "height":250,
+      "txtTop":20
     }
     
   ],
 
   "contact": {
     "title":"CONTACT SUPPORT",
-    "description": "Have a Question? Check out our  as we have a list of common questions answered there for you. If its not a common question fill out the form above and we’ll be able to get back to you within 24 hours"
-              
-  },https://github.com/nguyenbuu/repository.git
+    "content": "Have a Question? Check out our  as we have a list of common questions answered there for you. If its not a common question fill out the form above and we’ll be able to get back to you within 24 hours"
+  },
 
   "precise": [
   {

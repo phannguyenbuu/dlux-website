@@ -35,15 +35,9 @@ const ScrollablePanels = ({ infor }) => {
           sx={{ width: 'max-content', minWidth: '100%' }}
         >
           {infor.review.map((el, idx) => (
-            <SinglePanel 
-              key={idx}
-              title={el.title} 
-              content={el.description} 
-              img=''
+            <SinglePanel key={idx} {...el} img=''
               width= {isMobile() ? "80vw" : "40vw"}
               sx={{ minWidth: isMobile() ? "80vw" : "40vw" }}
-              imgHeight={250}
-              txtTop={20}
               fontScale = {isMobile() ? 0.8:1}
             />
           ))}
