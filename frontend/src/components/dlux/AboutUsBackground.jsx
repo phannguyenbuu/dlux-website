@@ -12,9 +12,8 @@ export const StarObj = () => (
 
 const AboutUsBackground = ({data=infor}) => 
 {
-    const isMobile = UseIsMobile();
-
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const isMobile = UseIsMobile();
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);

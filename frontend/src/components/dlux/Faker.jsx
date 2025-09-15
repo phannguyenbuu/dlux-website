@@ -32,7 +32,7 @@ export function generateFakeProducts(num = 10) {
       id: faker.string.uuid(),
       name: productName,
       material: productMaterial,
-      basePrice,
+      basePrice: `Base Price: $${basePrice}`,
       sizeDetails,
       description,
       imageUrl

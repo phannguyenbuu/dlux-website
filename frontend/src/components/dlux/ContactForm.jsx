@@ -1,20 +1,32 @@
-import { TextField, Button, Box, Typography } from "@mui/material";
-import React, { useState } from "react";
+import { Stack, TextField, Button, Box, Typography, Select, MenuItem } from "@mui/material";
+import React, { useEffect, useState } from "react";
 import { CenterBox, StyledButton, FlareEffect } from "./TitlePanel";
 import CommentDialog,{ConfirmDialog} from "./CommentDialog";
 import Autocomplete from '@mui/material/Autocomplete';
-import nations from "../../json/nation.json";
+// import nations from "../../json/nation.json";
 
 const ContactForm = ({mode="contact"}) => {
-  const [selectedCountry, setSelectedCountry] = useState(null);
+  const [country, setCountry] = useState('');
+  const [nations, setNations] = useState([]);
 
   const handleCountryChange = (event, newValue) => {
-  setSelectedCountry(newValue);
+    console.log("NewValue", event, newValue);
+  setCountry(event.target.value);
   setFormData(prev => ({
     ...prev,
     country: newValue ? newValue.name : '',
   }));
 };
+
+
+  useEffect(()=>{
+    fetch('https://restcountries.com/v3.1/all?fields=name,cca2,flags,idd')
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      setNations(data);
+    });
+  },[])
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -37,7 +49,7 @@ const ContactForm = ({mode="contact"}) => {
   };
 
   const handleSubmit = () => {
-    e.preventDefault();
+    // e.preventDefault();
 
     // Kiểm tra các trường quan trọng
     if (!formData.fullName.trim()) {
@@ -52,6 +64,7 @@ const ContactForm = ({mode="contact"}) => {
 
     setStatus(null);
     console.log("Form submitted:", formData);
+    setCountry("");
 
     setFormData({
       fullName: "",
@@ -68,28 +81,29 @@ const ContactForm = ({mode="contact"}) => {
 
 
   const commonTextFieldProps = {
-    InputLabelProps: {
-      style: { color: "white",borderRadius: 10 },
-    },
-    InputProps: {
-      style: { color: "white",borderRadius: 10 },
-    },
-    sx: {
-
-      "& .MuiOutlinedInput-root": {
-        "& fieldset": {
-          borderColor: "#000",
-          backgroundColor: "#061c32ff",
-        },
-        "&:hover fieldset": {
-          borderColor: "white",
-        },
-        "&.Mui-focused fieldset": {
-          borderColor: "white",
-        },
+  
+  sx: {
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "none",
+        backgroundColor: "rgba(255,255,255,0.1)",
+      },
+      "&:hover fieldset": {
+        borderColor: "white",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "white",
+      },
+      "& input": {  // đảm bảo chữ nhập sáng màu
+        color: "white",
       },
     },
-  };
+    "& label": {
+      color: "white"
+    }
+  },
+};
+
 
   return (
     <Box
@@ -165,42 +179,30 @@ const ContactForm = ({mode="contact"}) => {
           onChange={handleChange} fullWidth {...commonTextFieldProps} />
         
       </>}
-
-      <Autocomplete
-        options={nations}
-        getOptionLabel={(option) => `${option.name} (${option.dial_code})`}
-        value={selectedCountry}
-        onChange={handleCountryChange}
-        renderInput={(params) => (
-          <TextField
-            {...params}
+        <Stack direction="row" spacing={5}>
+          <Typography color="white" pl={2} pt={2} textTransform="none">Country</Typography>
+          <Select
+            labelId="country-select-label"
+            id="country-select"
+            value={country}
             label="Select a country"
-            fullWidth
-            InputLabelProps={{
-              style: { color: "white", borderRadius: 10 },
+            onChange={handleCountryChange}
+            sx={{ 
+              color: "white",
+              width: 300,
+              backgroundColor: "rgba(255,255,255,0.1)",
+              '& .MuiOutlinedInput-notchedOutline': { borderColor: '#000' }
             }}
-            InputProps={{
-              ...params.InputProps,
-              style: { color: "white", borderRadius: 10 },
-            }}
-            sx={{
-              "& .MuiOutlinedInput-root": {
-                "& fieldset": {
-                  borderColor: "none",
-                  backgroundColor: "#061c32ff",
-                },
-                "&:hover fieldset": {
-                  borderColor: "white",
-                },
-                "&.Mui-focused fieldset": {
-                  borderColor: "white",
-                },
-              },
-            }}
-          />
-        )}
-        sx={{ mt: 2 }}
-      />
+          >
+        {nations && nations.map((nation) => (
+          <MenuItem key={nation.cca2} value={nation.name}>
+            <img src={nation.flags.svg} alt={nation.name} 
+              style={{ width: 24, marginRight: 8, borderRadius: 12 }} />
+            {nation.name.common} (+{nation.idd.suffixes[0]})
+          </MenuItem>
+        ))}
+      </Select>
+      </Stack>
 
       <TextField
         label="Description"

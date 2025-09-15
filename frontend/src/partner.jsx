@@ -26,10 +26,6 @@ export default function Partner() {
         <SinglePanel {...infor.give} p={15}/>
       </CenterBox>
 
-
-
-
-
       <TitlePanel title="THE PLATFORM"/>
       <AboutUsBackground data={infor}/>
 
@@ -39,12 +35,11 @@ export default function Partner() {
           {infor.winner}
         </Typography>
       </CenterBox>
-      <CenterBox id="contact" top={5}>
+      <CenterBox top={5}>
         <ScrollablePanels data={infor}>
           <FlareEffect top={-60}/>
         </ScrollablePanels>
       </CenterBox>
-
       
       <TitlePanel title="BECOME A RELIABLE PARTNER"/>
       <CenterBox>

@@ -11,6 +11,8 @@ import {
 import Pagination from "@mui/material/Pagination";
 import PaginationItem from "@mui/material/PaginationItem";
 import ProductDialog from "./ProductDialogy";
+import { CenterBox } from "./TitlePanel";
+
 
 function ProductGallery({ data, images, itemsPerPage = 9 }) {
   const [page, setPage] = useState(1);
@@ -19,10 +21,7 @@ function ProductGallery({ data, images, itemsPerPage = 9 }) {
   
   const totalPages = Math.ceil(data.length / itemsPerPage);
 
-  const pageData = data.slice(
-    (page - 1) * itemsPerPage,
-    page * itemsPerPage
-  );
+  const pageData = data.slice((page - 1) * itemsPerPage, page * itemsPerPage);
 
   const handlePageChange = (event, value) => {
     setPage(value);
@@ -34,42 +33,57 @@ function ProductGallery({ data, images, itemsPerPage = 9 }) {
     setOpen(true);
   }
 
+  // console.log(data);
+
   return (
     <>
     <Box sx={{ width: "100%", padding: 2 }}>
-      <ImageList cols={3} gap={12}>
+      <ImageList sx={{ minHeight: 900 }} cols={3} gap={12}>
         {pageData.map((product, idx) => (
-          <ImageListItem key={product.id}>
-            <img
+          <ImageListItem key={product.id} sx={{ minWidth: 250, height: 400 }}>
+            {images && <img
               src={`/images/shop/${images[(page - 1) * itemsPerPage + idx]}`}
               alt={product.name}
               loading="lazy"
               style={{ borderRadius: 8 }}
 
               onClick={() => handleProductClick(product, `/images/shop/${images[(page - 1) * itemsPerPage + idx]}`)}
-            />
-            <ImageListItemBar
-              title={product.name}
+            />}
+            <ImageListItemBar title={product.name}
+              onClick={() => handleProductClick(product, product.img)}
+               sx={{ backgroundColor:"#fff",width: 250, height: 300 }}
               subtitle={
                 <>
-                  <Typography variant="body2" color="inherit">
-                    Material: {product.material}
+                  {product.img && 
+                  <CenterBox>
+                    <img src={product.img}
+                        alt={product.name}
+                        loading="lazy"
+                        style={{ borderRadius: 8, maxWidth:100, width:'auto', height:'auto' }}
+                        
+                      />
+
+                      </CenterBox>
+                  }
+
+                  {product.material &&
+                    <Typography variant="body2" color="#313131" 
+                     sx={{position:'absolute', fontSize:12, top: 250}}>
+                      Material: {product.material}
+                    </Typography>
+                  }
+
+                  {product.name &&
+                  <Typography variant="body2" color="#313131" 
+                     sx={{position:'absolute', fontWeight:700, top:20}}>
+                      {product.name}
+                    </Typography>
+                  }
+
+                  <Typography variant="body2" color="#313131"
+                   sx={{position:'absolute', fontSize:12, top: 280}}>
+                    {product.basePrice}
                   </Typography>
-                  <Typography variant="body2" color="inherit">
-                    Base Price: ${product.basePrice.toLocaleString()}
-                  </Typography>
-                  {/* <Typography
-                    variant="caption"
-                    color="inherit"
-                    component="div"
-                  >
-                    Sizes & Prices:
-                    {Object.entries(product.sizePrice).map(([size, price]) => (
-                      <span key={size} style={{ marginLeft: 8 }}>
-                        {size}: ${price.toLocaleString()}
-                      </span>
-                    ))}
-                  </Typography> */}
                 </>
               }
             />

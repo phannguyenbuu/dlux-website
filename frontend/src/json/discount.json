@@ -1,4 +1,32 @@
 {
+  "categories":["Services","Automotive","Pets","Retail","Trade & Services","Beauty","Recreation","Food & Beverages","Health & Fitness"],
+  "states":["AUS WIDE","ACT","NSW","NT","SA","TAS","VIC","QLD","WA"],
+  "stores":[
+    {
+      "title":"Elite Supps",
+      "img":"https://prod-lmct.s3.ap-southeast-2.amazonaws.com/partner/partner_7644_1752041607863.png"
+    },
+    {
+      "title":"Insync Workplace Solutions",
+      "img":"https://prod-lmct.s3.ap-southeast-2.amazonaws.com/partner/partner_4946_1753662789297.png"
+    },
+    {
+      "title":"Dyne Performance",
+      "img":"https://lmctmembers.com/public/uploads/partners/dyne-performance-3726-application.png"
+    },
+    {
+      "title":"TIARNE MANFRÉ",
+      "img":"https://lmctmembers.com/public/uploads/partners/tiarne-manfre-5468-application.png"
+    },
+    {
+      "title":"Bonfire Finance",
+      "img":"https://lmctmembers.com/public/uploads/partners/bonfire-finance-4554-application.png"
+    },
+    {"title":"Sunrise Innovations",
+    "img":"https://lmctmembers.com/public/uploads/partners/sunrise-innovations-4542-application.png"
+    }
+],
+      
 "images":[
   "quirkyt-5170-6631023-2.webp",
   "quirkyt-0077-8028243-2.webp",

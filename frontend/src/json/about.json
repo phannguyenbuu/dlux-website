@@ -1,0 +1,71 @@
+{
+
+
+    "aboutus":{
+        "indexes":[{"title":"2000<span style='color:#0497FD'>+</span>","content":"Australian business partners"},
+                {"title":"<span style='color:#0497FD'>$</span>1000<span style='color:#0497FD'>s</span>","content":"Is saving through our master rates discounts"},
+                {"title":"1500<span style='color:#0497FD'>+</span>","content":"Store you can redeem offers in person or online"}],
+        "contents": [
+            "Our platform not only facilitates access to exclusive deals from more than 1,000 partners but also empowers shoppers to make smart, cost-effective purchases all in one place.",
+            "Our users are not just visitors; they are paying members with a vested interest in utilizing our software to its fullest potential. This high intent to purchase makes our platform an attractive venue for advertisers and partners, ensuring high engagement rates and genuine transactions."
+        ],
+        "button": "Join Now"
+    },
+    
+    "quote":{"content":"Additionally, we pride ourselves on securing exclusive partnerships that provide unique discounts specifically for LMCT+ members, a benefit not commonly found with typical affiliate programs.",
+            "founder":"FOUNDER"},
+
+    "review": [
+    {
+      "img":"images/quotes.svg",
+      "title":"SHARONH - Loyalty Member",
+      "content":"Excellent customer service! I was having issues logging in and they were onto it straight away. Finally logged in and was able to view the features on the site. I have taken full advantage of the Mates Rates part and was able to receive $100 off my first purchase at Naked Wines. Will definitely be making more use of their special offers",
+      "height":320,
+      "txtTop":20
+    },
+    {
+      "img":"images/quotes.svg",
+      "title":"JOSH B - Silver Package",
+      "content":"Purchased a coupe of times before but never really saw the point of being able to have access to the database until I logged in and had a proper look. Ended up saving myself 15% at Beaurepairs and will definitely be making use of the special offers they have next time I make a purchase.",
+      "height":320,
+      "txtTop":20
+    },
+    {
+      "img":"images/quotes.svg",
+      "title":"LIAMH - Silver Package",
+      "content":"Was able to get some sick discounts through the members portal after making a one off purchase. Might have to join soon to keep getting all the perks",
+      "height":320,
+      "txtTop":20
+    },
+    {
+      "img":"images/quotes.svg",
+      "title":"LIAMH - Silver Package",
+      "content":"Was able to get some sick discounts through the members portal after making a one off purchase. Might have to join soon to keep getting all the perks",
+      "height":320,
+      "txtTop":20
+    },
+    {
+      "img":"images/quotes.svg",
+      "title":"LIAMH - Silver Package",
+      "content":"Was able to get some sick discounts through the members portal after making a one off purchase. Might have to join soon to keep getting all the perks",
+      "height":320,
+      "txtTop":20
+    },
+    {
+      "img":"images/quotes.svg",
+      "title":"BEN A - Silver Package",
+      "content":"Nice meeting the boys and getting to know them at their meet and greets, absolute legends!",
+      "height":320,
+      "txtTop":20
+    },
+    {
+      "img":"images/quotes.svg",
+      "title":"JAMES S - Platinum Package",
+      "content":"Had the pleasure of meeting the team at one of their track days and can’t wait to be able to meet them again!",
+      "height":320,
+      "txtTop":20
+    }
+    
+  ]
+
+}

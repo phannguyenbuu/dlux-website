@@ -16,9 +16,9 @@ export const WinnerPanel = ({img,title,content,prizes}) => {
       width="30vw"
       maxWidth={800}
       imgTop={0}
-      imgHeight={600}
+      height={600}
       sx={{ border: '1px solid #00bbffff', overflow: 'hidden', padding: 1 }}
-      fontScale={2.5}
+      fontScale={1.5}
     >
       <Stack spacing={1}>
       {prizes.map((el, idx) => 
@@ -89,8 +89,8 @@ export const WinnerPanel = ({img,title,content,prizes}) => {
   );
 }
 
-export const FamousGiveawayPanel = () => {
-  const initial = infor.famousGiveaway.initial;
+export const FamousGiveawayPanel = ({data=infor.famousGiveaway}) => {
+  const initial = data.initial;
 
   const totalSecondsInit = 
     initial.days * 86400 
@@ -122,9 +122,7 @@ export const FamousGiveawayPanel = () => {
   const seconds = secondsLeft % 60;
 
   return (
-    <SinglePanel {...infor.famousGiveaway}
-      
-      sx={{ border: '1px solid #00bbffff', overflow: 'hidden' }}
+    <SinglePanel {...data} sx={{ border: '1px solid #00bbffff', overflow: 'hidden' }}
     >
       <StyledButton title="Enter Now" hash="contact"/>
 

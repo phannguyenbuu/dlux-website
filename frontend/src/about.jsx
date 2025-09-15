@@ -1,9 +1,8 @@
 import React from 'react';
 import YouTubeVideoWidget from './components/YouTubeVideoWidget';
-import AbstractBackground from './components/dlux/AbstractBackground';
+import PageAbBackground from './components/dlux/PageAbBackground';
 import { Stack, Box, Typography, Button } from '@mui/material';
 
-import infor from './json/index.json';
 import SinglePanel, {BigPanel, FamousGiveawayPanel, WinnerPanel} from './components/dlux/SinglePanel';
 import PartnerPanel from './components/dlux/PartnerPanel';
 import AboutUsBackground from './components/dlux/AboutUsBackground';
@@ -11,6 +10,7 @@ import ScrollablePanels from './components/dlux/ScrollablePanels';
 import TitlePanel, {CenterBox, StyledButton} from './components/dlux/TitlePanel';
 import ContactForm from './components/dlux/ContactForm';
 import { FlareEffect } from './components/dlux/TitlePanel';
+import infor from "./json/about.json";
 
 const isMobile = () => {
   return window.screen.innerWidth < 768;
@@ -19,101 +19,27 @@ const isMobile = () => {
 export default function About() {
   return (
     <>
-      <AbstractBackground />
+      <PageAbBackground />
 
-      <Stack direction="row" spacing={5} justifyContent="center" alignItems="center" sx={{ marginTop: 20 }}>
-        {[0, 1, 2].map((i) => (
-          <SinglePanel key={i} {...infor.services[i]} />
-        ))}
-        <FlareEffect top={100}/>
-      </Stack>
-
-      <Stack direction="row" spacing={5} justifyContent="center" alignItems="center" sx={{ marginTop: 20 }}>
-        {[3, 4, 5].map((i) => (
-          <SinglePanel key={i} {...infor.services[i]} />
-        ))}
-      </Stack>
-
-      <Box sx={{ width: '99vw', overflow: 'hidden', height: 500 }}>
-        <TitlePanel title="OUR PARTNERS & DISCOUNTS" />
-        <PartnerPanel />
-
-        <Box sx={{ transform: 'translateY(-220px)' }}>
-          <PartnerPanel startAnimationTime={5} />
-        </Box>
-        <CenterBox>
-          <StyledButton title="See All Discounts" sx={{position:'absolute', mt:-155}}/>
-        </CenterBox>
-      </Box>
-
-      <TitlePanel title="ABOUT US" />
-      <AboutUsBackground />
-
-      <Box sx={{ width: '99vw', overflow: 'hidden', height: 450 }}>
-        <TitlePanel title="FEATURED ON" />
-
-        <Stack direction="row" spacing={5} justifyContent="center" alignItems="center" marginTop={0}>
-          {infor.features.map((el, index) => (
-            <SinglePanel key={index} {...el} />
-          ))}
-        </Stack>
-      </Box>
-
-      <Box>
-        <TitlePanel title="HOW IT WORKS" />
-
-        <CenterBox direction="row" gap={1}>
-          {infor.howItWorks.map((el, idx) => (
-            <BigPanel key={idx} {...el} images={[`/images/howItWorks/phone0${idx + 1}.png`]} />
-          ))}
-        </CenterBox>
-      </Box>
-
-      <TitlePanel title="THE FAMOUS D-LUX GIVEAWAY" />
+      <TitlePanel title="ABOUT US"/>
+      <AboutUsBackground data={infor}/>
 
       <CenterBox>
-        <FamousGiveawayPanel />
+        <Typography sx={{ fontSize:24, fontFamily:'Poppins', fontStyle:'italic', 
+                                textShadow: '0 0 5px rgba(0, 0, 0, 1)',
+                                maxWidth: "80vw",
+                                textAlign: 'center',
+                                mt: 10,
+                                fontWeight:700, color: '#fff'}}>
+                                "{infor.quote.content}"
+        </Typography>
       </CenterBox>
 
-      <TitlePanel title="PREVIOUS WINNERS" />
-
-      <CenterBox direction="row" gap={1}>
-        {infor.winners.map((el, idx) => (
-          <WinnerPanel key={idx} {...el} />
-        ))}
-      </CenterBox>
-
-      <TitlePanel title="EXCLUSIVE SAVINGS" />
-
-      <CenterBox>
-        <YouTubeVideoWidget videoId="eODJH76tvLs" />
-      </CenterBox>
-
-      <TitlePanel title="MEMBERSHIP PRIVILEGES" />
-
-      <CenterBox direction="row" gap={5} top={15}>
-        {[0, 1].map((i) => (
-          <SinglePanel key={i} {...infor.membership[i]} />
-        ))}
-        <FlareEffect top={50} />
-      </CenterBox>
-
-      <CenterBox direction="row" gap={5} top={15}>
-        {[2, 3].map((i) => (
-          <SinglePanel key={i} {...infor.membership[i]} />
-        ))}
-      </CenterBox>
-
+      <TitlePanel title={infor.quote.founder}/>
       <TitlePanel title="CLIENTS REVIEW" />
-      <ScrollablePanels infor={infor}>
+      <ScrollablePanels data={infor}>
         <FlareEffect top={-60}/>
       </ScrollablePanels>
-
-      <TitlePanel title={infor.contact.title} />
-
-      <CenterBox id="contact">
-        <ContactForm />
-      </CenterBox>
     </>
   );
 }
